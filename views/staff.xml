@@ -1,0 +1,129 @@
+<odoo>
+    <!--Manager-->
+    <record model="ir.ui.view" id="manager_form_view">
+        <field name="name">manager.form</field>
+        <field name="model">restaurantmng.manager</field>
+        <field name="arch" type="xml">
+            <form string="Manager Form">
+                <sheet>
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="General stuff" colspan="2"/>
+                            <field name="name"/>
+                            <field name="surname"/>
+                            <field name="dni"/>
+                            <field name="social_security"/>
+                            <field name="address"/>
+                            <field name="mobile_phone"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Job stuff" colspan="2"/>
+                            <field name="salary" options='{"type": "number", "step": 1000}'/>
+                            <field name="starting_date"/>
+                            <field name="years_experience" options='{"type": "number", "step": 1}'/>
+                            <field name="working_area"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="manager_tree_view">
+        <field name="name">manager.tree</field>
+        <field name="model">restaurantmng.manager</field>
+        <field name="arch" type="xml">
+            <tree string="Manager Tree">
+                <field name="name"/>
+                <field name="surname"/>
+                <field name="dni"/>
+                <field name="social_security"/>
+                <field name="address"/>
+                <field name="mobile_phone"/>
+                <field name="salary"/>
+                <field name="starting_date"/>
+                <field name="years_experience"/>
+                <field name="working_area"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="manager_list_action">
+        <field name="name">Manager</field>
+        <field name="res_model">restaurantmng.manager</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a new Manager
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="staff_menu" name="Staff"
+                  parent="main_restaurantmng_menu"/>
+
+    <menuitem id="manager_menu" name="Managers"
+        parent="staff_menu"
+        action="manager_list_action"/>
+
+    <!--Chef-->
+    <record model="ir.ui.view" id="chef_form_view">
+        <field name="name">chef.form</field>
+        <field name="model">restaurantmng.chef</field>
+        <field name="arch" type="xml">
+            <form string="Chef Form">
+                <sheet>
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="General stuff" colspan="2"/>
+                            <field name="name"/>
+                            <field name="surname"/>
+                            <field name="dni"/>
+                            <field name="social_security"/>
+                            <field name="address"/>
+                            <field name="mobile_phone"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Job stuff" colspan="2"/>
+                            <field name="salary" options='{"type": "number", "step": 1000}'/>
+                            <field name="starting_date"/>
+                            <field name="specialty"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="chef_tree_view">
+        <field name="name">chef.tree</field>
+        <field name="model">restaurantmng.chef</field>
+        <field name="arch" type="xml">
+            <tree string="Chef Tree">
+                <field name="name"/>
+                <field name="surname"/>
+                <field name="dni"/>
+                <field name="social_security"/>
+                <field name="address"/>
+                <field name="mobile_phone"/>
+                <field name="salary"/>
+                <field name="starting_date"/>
+                <field name="specialty"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="chef_list_action">
+        <field name="name">Chef</field>
+        <field name="res_model">restaurantmng.chef</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a new Chef
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="chef_menu" name="Chef"
+        parent="staff_menu"
+        action="chef_list_action"/>
+     
+</odoo>
