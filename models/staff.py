@@ -14,7 +14,6 @@ class Staff(models.Model):
 
 class Manager(models.Model):
     _name = 'restaurantmng.manager'
-    _order = 'name'
     _inherit = 'restaurantmng.staff'
 
     years_experience = fields.Integer()
@@ -22,7 +21,26 @@ class Manager(models.Model):
 
 class Chef(models.Model):
     _name = 'restaurantmng.chef'
-    _order = 'name'
     _inherit = 'restaurantmng.staff'
 
     specialty = fields.Char()
+
+class Service(models.Model):
+    _name = 'restaurantmng.service'
+    _inherit = 'restaurantmng.staff'
+
+    area = fields.Selection([('bar', 'bar'), ('terrace', 'terrace')])
+
+class Cleaning(models.Model):
+    _name = 'restaurantmng.cleaning'
+    _inherit = 'restaurantmng.staff'
+
+
+
+class Delivery(models.Model):
+    _name = 'restaurantmng.delivery'
+    _inherit = 'restaurantmng.staff'
+
+    own_vehicle = fields.Boolean()
+    vehicle = fields.Selection([('motorcycle', 'Motorcycle'), ('bike', 'Bike'), ('car', 'Car')])
+

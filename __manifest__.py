@@ -4,10 +4,7 @@
     'summary': """Manage Restaurants""",
 
     'description': """
-        Module for CA to manage a restaurant:
-            - employees
-            - deliveries
-            - events
+        Module to manage a single restaurant. You will be able to manage your staff, deliveries and clients in the same module
     """,
 
     'author': "Alberto Quintin",

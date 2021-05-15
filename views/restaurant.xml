@@ -9,9 +9,9 @@
                         <group>
                             <field name="name"/>
                             <field name="starting_date"/>
-                            <field name="founder">
-                            <field name="city">
-                            <field name="country">
+                            <field name="founder"/>
+                            <field name="city"/>
+                            <field name="country"/>
                             <field name="restaurant_image" widget="image"/>
                         </group>
                     </sheet>
@@ -26,9 +26,9 @@
                 <tree string="Restaurant Tree">
                     <field name="name"/>
                     <field name="starting_date"/>
-                    <field name="founder">
-                    <field name="city">
-                    <field name="country">
+                    <field name="founder"/>
+                    <field name="city"/>
+                    <field name="country"/>
                 </tree>
             </field>
         </record>
@@ -54,7 +54,7 @@
                                     <div class="col-md-7">
                                         <b><field name="name"/></b>
                                         <div name="tags"/>
-                                        <b>Founder:</b> <field name="funder"/>
+                                        <b>Founder:</b> <field name="founder"/>
                                     </div>
                                 </div>
                             </div>

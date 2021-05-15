@@ -122,8 +122,191 @@
         </field>
     </record>
 
-    <menuitem id="chef_menu" name="Chef"
+    <menuitem id="chef_menu" name="Chefs"
         parent="staff_menu"
         action="chef_list_action"/>
+
+        <!--Service-->
+        <record model="ir.ui.view" id="service_form_view">
+        <field name="name">service.form</field>
+        <field name="model">restaurantmng.service</field>
+        <field name="arch" type="xml">
+            <form string="Service Staff Form">
+                <sheet>
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="General stuff" colspan="2"/>
+                            <field name="name"/>
+                            <field name="surname"/>
+                            <field name="dni"/>
+                            <field name="social_security"/>
+                            <field name="address"/>
+                            <field name="mobile_phone"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Job stuff" colspan="2"/>
+                            <field name="salary" options='{"type": "number", "step": 1000}'/>
+                            <field name="starting_date"/>
+                            <field name="area"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="service_tree_view">
+        <field name="name">service.tree</field>
+        <field name="model">restaurantmng.service</field>
+        <field name="arch" type="xml">
+            <tree string="Service Staff Tree">
+                <field name="name"/>
+                <field name="surname"/>
+                <field name="dni"/>
+                <field name="social_security"/>
+                <field name="address"/>
+                <field name="mobile_phone"/>
+                <field name="salary"/>
+                <field name="starting_date"/>
+                <field name="area"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="service_list_action">
+        <field name="name">Service</field>
+        <field name="res_model">restaurantmng.service</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a new Service Person
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="service_menu" name="Service People"
+        parent="staff_menu"
+        action="service_list_action"/>
+
+    <!--Cleaning-->
+    <record model="ir.ui.view" id="cleaning_form_view">
+        <field name="name">cleaning.form</field>
+        <field name="model">restaurantmng.cleaning</field>
+        <field name="arch" type="xml">
+            <form string="Cleaning Staff Form">
+                <sheet>
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="General stuff" colspan="2"/>
+                            <field name="name"/>
+                            <field name="surname"/>
+                            <field name="dni"/>
+                            <field name="social_security"/>
+                            <field name="address"/>
+                            <field name="mobile_phone"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Job stuff" colspan="2"/>
+                            <field name="salary" options='{"type": "number", "step": 1000}'/>
+                            <field name="starting_date"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="cleaning_tree_view">
+        <field name="name">cleaning.tree</field>
+        <field name="model">restaurantmng.cleaning</field>
+        <field name="arch" type="xml">
+            <tree string="Cleaning Staff Tree">
+                <field name="name"/>
+                <field name="surname"/>
+                <field name="dni"/>
+                <field name="social_security"/>
+                <field name="address"/>
+                <field name="mobile_phone"/>
+                <field name="salary"/>
+                <field name="starting_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="cleaning_list_action">
+        <field name="name">Cleaning</field>
+        <field name="res_model">restaurantmng.cleaning</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a new Cleaning Person
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="cleaning_menu" name="Cleaning People"
+        parent="staff_menu"
+        action="cleaning_list_action"/>
+
+    <!--Delivery-->
+    <record model="ir.ui.view" id="delivery_form_view">
+        <field name="name">delivery.form</field>
+        <field name="model">restaurantmng.delivery</field>
+        <field name="arch" type="xml">
+            <form string="Delivery Staff Form">
+                <sheet>
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="General stuff" colspan="2"/>
+                            <field name="name"/>
+                            <field name="surname"/>
+                            <field name="dni"/>
+                            <field name="social_security"/>
+                            <field name="address"/>
+                            <field name="mobile_phone"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Job stuff" colspan="2"/>
+                            <field name="salary" options='{"type": "number", "step": 1000}'/>
+                            <field name="starting_date"/>
+                            <field name="own_vehicle"/>
+                            <field name="vehicle"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="delivery_tree_view">
+        <field name="name">delivery.tree</field>
+        <field name="model">restaurantmng.delivery</field>
+        <field name="arch" type="xml">
+            <tree string="Delivery Tree">
+                <field name="name"/>
+                <field name="surname"/>
+                <field name="dni"/>
+                <field name="social_security"/>
+                <field name="address"/>
+                <field name="mobile_phone"/>
+                <field name="salary"/>
+                <field name="starting_date"/>
+                <field name="own_vehicle"/>
+                <field name="vehicle"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="delivery_list_action">
+        <field name="name">Delivery</field>
+        <field name="res_model">restaurantmng.delivery</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a new Delivery Person
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="delivery_menu" name="Delivery People"
+        parent="staff_menu"
+        action="delivery_list_action"/>
      
 </odoo>
