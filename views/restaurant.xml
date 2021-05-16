@@ -1,88 +1,88 @@
 <odoo>
 
-<record model="ir.ui.view" id="restaurant_form_view">
-            <field name="name">restaurant.form</field>
-            <field name="model">restaurantmng.restaurant</field>
-            <field name="arch" type="xml">
-                <form string="Restaurant Form">
-                    <sheet>
-                        <group>
-                            <field name="name"/>
-                            <field name="starting_date"/>
-                            <field name="founder"/>
-                            <field name="city"/>
-                            <field name="country"/>
-                            <field name="restaurant_image" widget="image"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
+  <record model="ir.ui.view" id="restaurant_form_view">
+      <field name="name">restaurant.form</field>
+      <field name="model">restaurantmng.restaurant</field>
+      <field name="arch" type="xml">
+          <form string="Restaurant Form">
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="starting_date"/>
+                      <field name="founder"/>
+                      <field name="city"/>
+                      <field name="country"/>
+                      <field name="restaurant_image" widget="image"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
 
-        <record model="ir.ui.view" id="restaurant_tree_view">
-            <field name="name">restaurant.tree</field>
-            <field name="model">restaurantmng.restaurant</field>
-            <field name="arch" type="xml">
-                <tree string="Restaurant Tree">
-                    <field name="name"/>
-                    <field name="starting_date"/>
-                    <field name="founder"/>
-                    <field name="city"/>
-                    <field name="country"/>
-                </tree>
-            </field>
-        </record>
+  <record model="ir.ui.view" id="restaurant_tree_view">
+      <field name="name">restaurant.tree</field>
+      <field name="model">restaurantmng.restaurant</field>
+      <field name="arch" type="xml">
+          <tree string="Restaurant Tree">
+              <field name="name"/>
+              <field name="starting_date"/>
+              <field name="founder"/>
+              <field name="city"/>
+              <field name="country"/>
+          </tree>
+      </field>
+  </record>
 
-        <record  model="ir.ui.view" id="restaurant_kanban_view">
-        <field name="name">restaurant.kanban</field>
-        <field name="model">restaurantmng.restaurant</field>
-        <field name="arch" type="xml">
-            <kanban>
-                <field name="id"/>
-                <field name="name"/>
-                <field name="restaurant_image"/>
-                <templates>
-                    <t t-name="kanban-box">
-                        <div t-attf-class="oe_kanban_global_click">
-                            <div class="oe_kanban_details">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="o_kanban_image">
-                                            <img t-att-src="kanban_image('restaurantmng.restaurant','restaurant_image',record.id.raw_value)"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <b><field name="name"/></b>
-                                        <div name="tags"/>
-                                        <b>Founder:</b> <field name="founder"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </t>
-                </templates>
-            </kanban>
-        </field>
-    </record>
+  <record  model="ir.ui.view" id="restaurant_kanban_view">
+    <field name="name">restaurant.kanban</field>
+    <field name="model">restaurantmng.restaurant</field>
+    <field name="arch" type="xml">
+      <kanban>
+        <field name="id"/>
+          <field name="name"/>
+          <field name="restaurant_image"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div t-attf-class="oe_kanban_global_click">
+                <div class="oe_kanban_details">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="o_kanban_image">
+                        <img t-att-src="kanban_image('restaurantmng.restaurant','restaurant_image',record.id.raw_value)"/>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <b><field name="name"/></b>
+                      <div name="tags"/>
+                      <b>Founder:</b> <field name="founder"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+    </field>
+  </record>
 
 
-        <record model="ir.actions.act_window" id="restaurant_list_action">
-            <field name="name">Restaurant</field>
-            <field name="res_model">restaurantmng.restaurant</field>
-            <field name="view_mode">tree,form,kanban</field>
-            <field name="help" type="html">
-                <p class="o_view_nocontent_smiling_face">Create a new restaurant
-                </p>
-            </field>
-        </record>
-        
-        <menuitem id="main_restaurantmng_menu" name="RestaurantMng"/>
+  <record model="ir.actions.act_window" id="restaurant_list_action">
+      <field name="name">Restaurant</field>
+      <field name="res_model">restaurantmng.restaurant</field>
+      <field name="view_mode">tree,form,kanban</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new restaurant
+          </p>
+      </field>
+  </record>
+    
+  <menuitem id="main_restaurantmng_menu" name="RestaurantMng"/>
 
-        <menuitem id="restaurantmng_menu" name="RestaurantMng"
-                  parent="main_restaurantmng_menu"/>
+  <menuitem id="restaurantmng_menu" name="RestaurantMng"
+            parent="main_restaurantmng_menu"/>
 
-        <menuitem id="restaurant_menu" name="Restaurant"
-            parent="restaurantmng_menu"
-            action="restaurant_list_action"/>
+  <menuitem id="restaurant_menu" name="Restaurant"
+      parent="restaurantmng_menu"
+      action="restaurant_list_action"/>
             
 </odoo>

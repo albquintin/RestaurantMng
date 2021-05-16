@@ -1,0 +1,45 @@
+<odoo>
+  <record model="ir.ui.view" id="drink_form_view">
+      <field name="name">drink.form</field>
+      <field name="model">restaurantmng.drink</field>
+      <field name="arch" type="xml">
+        <form string="Drink Form">
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="is_alcoholic"/>
+              <field name="alcohol_volume"/>
+              <field name="price"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="drink_tree_view">
+      <field name="name">drink.tree</field>
+      <field name="model">restaurantmng.drink</field>
+      <field name="arch" type="xml">
+          <tree string="Drink Tree">
+            <field name="name"/>
+            <field name="is_alcoholic"/>
+            <field name="alcohol_volume"/>
+            <field name="price"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="drink_list_action">
+      <field name="name">Drink</field>
+      <field name="res_model">restaurantmng.drink</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new Drink
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="drink_menu" name="Drinks"
+    parent="restaurantmng_menu"
+    action="drink_list_action"/>
+</odoo>

@@ -1,0 +1,52 @@
+<odoo>
+  <record model="ir.ui.view" id="client_form_view">
+      <field name="name">client.form</field>
+      <field name="model">restaurantmng.client</field>
+      <field name="arch" type="xml">
+          <form string="Client Form">
+              <sheet>
+                  <group>
+                    <field name="name"/>
+                    <field name="surname"/>
+                    <field name="mobile"/>
+                    <field name="email"/>
+                    <field name="neighborhood_id"/>
+                    <field name="is_vip"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="client_tree_view">
+      <field name="name">client.tree</field>
+      <field name="model">restaurantmng.client</field>
+      <field name="arch" type="xml">
+          <tree string="Client Tree">
+            <field name="name"/>
+            <field name="surname"/>
+            <field name="mobile"/>
+            <field name="email"/>
+            <field name="neighborhood_id"/>
+            <field name="is_vip"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="client_list_action">
+      <field name="name">Client</field>
+      <field name="res_model">restaurantmng.client</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new client
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="clientzone_menu" name="Client Zone"
+              parent="main_restaurantmng_menu"/>
+
+  <menuitem id="client_menu" name="Clients"
+      parent="clientzone_menu"
+      action="client_list_action"/>
+</odoo>

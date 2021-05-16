@@ -1,0 +1,43 @@
+<odoo>
+  <record model="ir.ui.view" id="neighborhood_form_view">
+      <field name="name">neighborhood.form</field>
+      <field name="model">restaurantmng.neighborhood</field>
+      <field name="arch" type="xml">
+          <form string="Neighborhood Form">
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="postcode"/>
+                      <field name="population" options='{"type": "number", "step": 100}'/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="neighborhood_tree_view">
+      <field name="name">neighborhood.tree</field>
+      <field name="model">restaurantmng.neighborhood</field>
+      <field name="arch" type="xml">
+          <tree string="Neighborhood Tree">
+            <field name="name"/>
+            <field name="postcode"/>
+            <field name="population"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="neighborhood_list_action">
+      <field name="name">Neighborhood</field>
+      <field name="res_model">restaurantmng.neighborhood</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new neighborhood
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="neighborhood_menu" name="Neighborhoods"
+    parent="clientzone_menu"
+    action="neighborhood_list_action"/>
+</odoo>

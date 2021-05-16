@@ -1,0 +1,43 @@
+<odoo>
+  <record model="ir.ui.view" id="menu_form_view">
+      <field name="name">menu.form</field>
+      <field name="model">restaurantmng.menu</field>
+      <field name="arch" type="xml">
+          <form string="Menu Form">
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="dish_ids"/>
+                      <field name="price" options='{"type": "number", "step": 1}'/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="menu_tree_view">
+      <field name="name">menu.tree</field>
+      <field name="model">restaurantmng.menu</field>
+      <field name="arch" type="xml">
+          <tree string="Menu Tree">
+            <field name="name"/>
+            <field name="dish_ids"/>
+            <field name="price"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="menu_list_action">
+      <field name="name">Menu</field>
+      <field name="res_model">restaurantmng.menu</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new menu
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="menu_menu" name="Menus"
+      parent="restaurantmng_menu"
+      action="menu_list_action"/>
+</odoo>

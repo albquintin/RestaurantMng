@@ -53,7 +53,7 @@
         <field name="res_model">restaurantmng.manager</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">Create a new Manager
+            <p class="o_view_nocontent_smiling_face">Insert a new Manager
             </p>
         </field>
     </record>
@@ -117,7 +117,7 @@
         <field name="res_model">restaurantmng.chef</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">Create a new Chef
+            <p class="o_view_nocontent_smiling_face">Insert a new Chef
             </p>
         </field>
     </record>
@@ -178,7 +178,7 @@
         <field name="res_model">restaurantmng.service</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">Create a new Service Person
+            <p class="o_view_nocontent_smiling_face">Insert a new Service Person
             </p>
         </field>
     </record>
@@ -237,7 +237,7 @@
         <field name="res_model">restaurantmng.cleaning</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">Create a new Cleaning Person
+            <p class="o_view_nocontent_smiling_face">Insert a new Cleaning Person
             </p>
         </field>
     </record>
@@ -300,7 +300,7 @@
         <field name="res_model">restaurantmng.delivery</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">Create a new Delivery Person
+            <p class="o_view_nocontent_smiling_face">Insert a new Delivery Person
             </p>
         </field>
     </record>

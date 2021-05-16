@@ -1,0 +1,41 @@
+<odoo>
+
+  <record model="ir.ui.view" id="ingredient_form_view">
+      <field name="name">ingredient.form</field>
+      <field name="model">restaurantmng.ingredient</field>
+      <field name="arch" type="xml">
+          <form string="Ingredient Form">
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="ingredient_tree_view">
+      <field name="name">ingredient.tree</field>
+      <field name="model">restaurantmng.ingredient</field>
+      <field name="arch" type="xml">
+          <tree string="Ingredient Tree">
+              <field name="name"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="ingredient_list_action">
+      <field name="name">Ingredient</field>
+      <field name="res_model">restaurantmng.ingredient</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new ingredient
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="ingredient_menu" name="Ingredients"
+      parent="restaurantmng_menu"
+      action="ingredient_list_action"/>
+        
+</odoo>

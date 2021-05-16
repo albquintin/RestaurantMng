@@ -1,6 +1,6 @@
 from odoo import models, fields
 
-class Natural_Park(models.Model):
+class Restaurant(models.Model):
     _name = 'restaurantmng.restaurant'
     _order = 'name'
 

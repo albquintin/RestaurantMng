@@ -1,0 +1,47 @@
+<odoo>
+  <record model="ir.ui.view" id="dish_form_view">
+      <field name="name">dish.form</field>
+      <field name="model">restaurantmng.dish</field>
+      <field name="arch" type="xml">
+          <form string="Dish Form">
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="dish_type"/>
+                      <field name="ingredient_ids"/>
+                      <field name="is_vegan"/>
+                      <field name="price" options='{"type": "number", "step": 1}'/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="dish_tree_view">
+      <field name="name">dish.tree</field>
+      <field name="model">restaurantmng.dish</field>
+      <field name="arch" type="xml">
+          <tree string="Dish Tree">
+            <field name="name"/>
+            <field name="dish_type"/>
+            <field name="ingredient_ids"/>
+            <field name="is_vegan"/>
+            <field name="price"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="dish_list_action">
+      <field name="name">Dish</field>
+      <field name="res_model">restaurantmng.dish</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new dish
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="dish_menu" name="Dishes"
+      parent="restaurantmng_menu"
+      action="dish_list_action"/>
+</odoo>

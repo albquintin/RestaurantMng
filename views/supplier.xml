@@ -1,0 +1,147 @@
+<!--Food Supplier-->
+<odoo>
+  <record model="ir.ui.view" id="foodsupplier_form_view">
+      <field name="name">food_supplier.form</field>
+      <field name="model">restaurantmng.food_supplier</field>
+      <field name="arch" type="xml">
+          <form string="Food Supplier Form">
+              <sheet>
+                  <group>
+                    <field name="name"/>
+                    <field name="contact_person"/>
+                    <field name="address"/>
+                    <field name="email"/>
+                    <field name="ingredient_ids"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="foodsupplier_tree_view">
+      <field name="name">food_supplier.tree</field>
+      <field name="model">restaurantmng.food_supplier</field>
+      <field name="arch" type="xml">
+          <tree string="Food Supplier Tree">
+            <field name="name"/>
+            <field name="contact_person"/>
+            <field name="address"/>
+            <field name="email"/>
+            <field name="ingredient_ids"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="foodsupplier_list_action">
+      <field name="name">Food Supplier</field>
+      <field name="res_model">restaurantmng.food_supplier</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new Food Supplier
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="supply_menu" name="Supply"
+              parent="main_restaurantmng_menu"/>
+
+  <menuitem id="foodsupplier_menu" name="Food Suppliers"
+    parent="supply_menu"
+    action="foodsupplier_list_action"/>
+
+  <!--Equipment Supplier-->
+
+  <record model="ir.ui.view" id="equipmentsupplier_form_view">
+      <field name="name">equipment_supplier.form</field>
+      <field name="model">restaurantmng.equipment_supplier</field>
+      <field name="arch" type="xml">
+          <form string="Equipment Supplier Form">
+              <sheet>
+                  <group>
+                    <field name="name"/>
+                    <field name="contact_person"/>
+                    <field name="address"/>
+                    <field name="email"/>
+                    <field name="equipment_ids"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="equipmentsupplier_tree_view">
+      <field name="name">equipment_supplier.tree</field>
+      <field name="model">restaurantmng.equipment_supplier</field>
+      <field name="arch" type="xml">
+          <tree string="Equipment Supplier Tree">
+            <field name="name"/>
+            <field name="contact_person"/>
+            <field name="address"/>
+            <field name="email"/>
+            <field name="equipment_ids"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="equipmentsupplier_list_action">
+      <field name="name">Equipment Supplier</field>
+      <field name="res_model">restaurantmng.equipment_supplier</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new Equipment Supplier
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="equipmentsupplier_menu" name="Equipment Suppliers"
+    parent="supply_menu"
+    action="equipmentsupplier_list_action"/>
+
+    <!--Drink Supplier-->
+
+  <record model="ir.ui.view" id="drinksupplier_form_view">
+      <field name="name">drink_supplier.form</field>
+      <field name="model">restaurantmng.drink_supplier</field>
+      <field name="arch" type="xml">
+          <form string="Drink Supplier Form">
+              <sheet>
+                  <group>
+                    <field name="name"/>
+                    <field name="contact_person"/>
+                    <field name="address"/>
+                    <field name="email"/>
+                    <field name="drink_ids"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="drinksupplier_tree_view">
+      <field name="name">drink_supplier.tree</field>
+      <field name="model">restaurantmng.drink_supplier</field>
+      <field name="arch" type="xml">
+          <tree string="Drink Supplier Tree">
+            <field name="name"/>
+            <field name="contact_person"/>
+            <field name="address"/>
+            <field name="email"/>
+            <field name="drink_ids"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="drinksupplier_list_action">
+      <field name="name">Drink Supplier</field>
+      <field name="res_model">restaurantmng.drink_supplier</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Insert a new Drink Supplier
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="drinksupplier_menu" name="Drink Suppliers"
+    parent="supply_menu"
+    action="drinksupplier_list_action"/>
+</odoo>

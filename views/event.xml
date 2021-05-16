@@ -1,0 +1,45 @@
+<odoo>
+  <record model="ir.ui.view" id="event_form_view">
+      <field name="name">event.form</field>
+      <field name="model">restaurantmng.event</field>
+      <field name="arch" type="xml">
+          <form string="Event Form">
+              <sheet>
+                  <group>
+                    <field name="event_date"/>
+                    <field name="num_people"/>
+                    <field name="service_ids"/>
+                    <field name="chef_ids"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="event_tree_view">
+      <field name="name">event.tree</field>
+      <field name="model">restaurantmng.event</field>
+      <field name="arch" type="xml">
+          <tree string="Event Tree">
+            <field name="event_date"/>
+            <field name="num_people"/>
+            <field name="service_ids"/>
+            <field name="chef_ids"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="event_list_action">
+      <field name="name">Event</field>
+      <field name="res_model">restaurantmng.event</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new event
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="event_menu" name="Events"
+    parent="clientzone_menu"
+    action="event_list_action"/>
+</odoo>

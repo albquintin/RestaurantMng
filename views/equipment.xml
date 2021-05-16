@@ -1,0 +1,45 @@
+<odoo>
+  <record model="ir.ui.view" id="equipment_form_view">
+      <field name="name">equipment.form</field>
+      <field name="model">restaurantmng.equipment</field>
+      <field name="arch" type="xml">
+          <form string="Equipment Form">
+              <sheet>
+                  <group>
+                      <field name="name"/>
+                      <field name="brand"/>
+                      <field name="buying_date"/>
+                      <field name="price"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="equipment_tree_view">
+      <field name="name">equipment.tree</field>
+      <field name="model">restaurantmng.equipment</field>
+      <field name="arch" type="xml">
+          <tree string="Equipment Tree">
+            <field name="name"/>
+            <field name="brand"/>
+            <field name="buying_date"/>
+            <field name="price"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="equipment_list_action">
+      <field name="name">Equipment</field>
+      <field name="res_model">restaurantmng.equipment</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new piece of equipment
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="equipment_menu" name="Equipment"
+      parent="restaurantmng_menu"
+      action="equipment_list_action"/>
+</odoo>

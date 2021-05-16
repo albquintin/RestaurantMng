@@ -1,0 +1,145 @@
+<odoo>
+
+<!--Food Order-->
+  <record model="ir.ui.view" id="foodorder_form_view">
+      <field name="name">food_order.form</field>
+      <field name="model">restaurantmng.food_order</field>
+      <field name="arch" type="xml">
+        <form string="Food Order Form">
+          <sheet>
+            <group>
+              <field name="manager_id"/>
+              <field name="order_date"/>
+              <field name="total_price"/>
+              <field name="food_supplier_id"/>
+              <field name="ingredient_ids"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="foodorder_tree_view">
+      <field name="name">food_order.tree</field>
+      <field name="model">restaurantmng.food_order</field>
+      <field name="arch" type="xml">
+          <tree string="Food Order Tree">
+            <field name="manager_id"/>
+            <field name="order_date"/>
+            <field name="total_price"/>
+            <field name="food_supplier_id"/>
+            <field name="ingredient_ids"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="foodorder_list_action">
+      <field name="name">Food Order</field>
+      <field name="res_model">restaurantmng.food_order</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new Food Order
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="foodorder_menu" name="Food Orders"
+    parent="supply_menu"
+    action="foodorder_list_action"/>
+
+  <!--Equipment Order-->
+
+  <record model="ir.ui.view" id="equipmentorder_form_view">
+    <field name="name">equipment_order.form</field>
+    <field name="model">restaurantmng.equipment_order</field>
+    <field name="arch" type="xml">
+      <form string="Equipment Order Form">
+        <sheet>
+          <group>
+            <field name="manager_id"/>
+            <field name="order_date"/>
+            <field name="total_price"/>
+            <field name="equipment_supplier_id"/>
+            <field name="equipment_ids"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="equipmentorder_tree_view">
+      <field name="name">equipment_order.tree</field>
+      <field name="model">restaurantmng.equipment_order</field>
+      <field name="arch" type="xml">
+          <tree string="Equipment Order Tree">
+            <field name="manager_id"/>
+            <field name="order_date"/>
+            <field name="total_price"/>
+            <field name="equipment_supplier_id"/>
+            <field name="equipment_ids"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="equipmentorder_list_action">
+      <field name="name">Equipment Order</field>
+      <field name="res_model">restaurantmng.equipment_order</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new Equipment Order
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="equipmentorder_menu" name="Equipment Orders"
+    parent="supply_menu"
+    action="equipmentorder_list_action"/>
+
+  <!--Drink Order-->
+
+  <record model="ir.ui.view" id="drinkorder_form_view">
+    <field name="name">drink_order.form</field>
+    <field name="model">restaurantmng.drink_order</field>
+    <field name="arch" type="xml">
+      <form string="Drink Order Form">
+        <sheet>
+          <group>
+            <field name="manager_id"/>
+            <field name="order_date"/>
+            <field name="total_price"/>
+            <field name="drink_supplier_id"/>
+            <field name="drink_ids"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="drinkorder_tree_view">
+      <field name="name">drink_order.tree</field>
+      <field name="model">restaurantmng.drink_order</field>
+      <field name="arch" type="xml">
+          <tree string="Drink Order Tree">
+            <field name="manager_id"/>
+            <field name="order_date"/>
+            <field name="total_price"/>
+            <field name="drink_supplier_id"/>
+            <field name="drink_ids"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="drinkorder_list_action">
+      <field name="name">Drink Order</field>
+      <field name="res_model">restaurantmng.drink_order</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new Drink Order
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="drinkorder_menu" name="Drink Orders"
+    parent="supply_menu"
+    action="drinkorder_list_action"/>
+</odoo>

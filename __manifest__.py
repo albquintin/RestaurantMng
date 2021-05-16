@@ -18,5 +18,16 @@
     'data': [
         'views/restaurant.xml',
         'views/staff.xml',
+        'views/ingredient.xml',
+        'views/dish.xml',
+        'views/menu.xml',
+        'views/drink.xml',
+        'views/equipment.xml',
+        'views/supplier.xml',
+        'views/supply_order.xml',
+        'views/client.xml',
+        'views/neighborhood.xml',
+        'views/order.xml',
+        'views/event.xml',
     ],
 }

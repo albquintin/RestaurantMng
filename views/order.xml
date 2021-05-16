@@ -1,0 +1,45 @@
+<odoo>
+  <record model="ir.ui.view" id="order_form_view">
+      <field name="name">order.form</field>
+      <field name="model">restaurantmng.order</field>
+      <field name="arch" type="xml">
+          <form string="Order Form">
+              <sheet>
+                  <group>
+                    <field name="client_id"/>
+                    <field name="dish_ids"/>
+                    <field name="menu_ids"/>
+                    <field name="delivery_id"/>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="order_tree_view">
+      <field name="name">order.tree</field>
+      <field name="model">restaurantmng.order</field>
+      <field name="arch" type="xml">
+          <tree string="Order Tree">
+            <field name="client_id"/>
+            <field name="dish_ids"/>
+            <field name="menu_ids"/>
+            <field name="delivery_id"/>
+          </tree>
+      </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="order_list_action">
+      <field name="name">Order</field>
+      <field name="res_model">restaurantmng.order</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">Create a new Order
+          </p>
+      </field>
+  </record>
+
+  <menuitem id="order_menu" name="Orders"
+    parent="clientzone_menu"
+    action="order_list_action"/>
+</odoo>
