@@ -4,6 +4,12 @@
       <field name="model">restaurantmng.event</field>
       <field name="arch" type="xml">
           <form string="Event Form">
+            <header>
+              <button name="action_confirm" type="object" string="Confirm" states="1.draft" class="oe_highlight"/>
+              <button name="action_done" type="object" string="Done" states="2.confirm" class="oe_highlight"/>
+              <button name="action_draft" type="object"  string="Reset to draft" states="2.confirm,3.done" />
+              <field name="state" widget="statusbar" statusbar_visible="1.draft,2.confirm,3.done" />
+            </header>
               <sheet>
                   <group>
                     <field name="event_date"/>
@@ -20,11 +26,12 @@
       <field name="name">event.tree</field>
       <field name="model">restaurantmng.event</field>
       <field name="arch" type="xml">
-          <tree string="Event Tree">
+          <tree decoration-muted="state == '1.draft'" decoration-success="state == '2.confirm'" decoration-danger="state == '3.done'" string="Event Tree">
             <field name="event_date"/>
             <field name="num_people"/>
             <field name="service_ids"/>
             <field name="chef_ids"/>
+            <field name="state"/>
           </tree>
       </field>
   </record>

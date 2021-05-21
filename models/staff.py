@@ -24,6 +24,8 @@ class Chef(models.Model):
     _inherit = 'restaurantmng.staff'
 
     specialty = fields.Char()
+    dish_ids = fields.Many2many('restaurantmng.dish', string="Dishes")
+
 
 class Service(models.Model):
     _name = 'restaurantmng.service'

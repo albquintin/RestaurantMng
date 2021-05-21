@@ -8,7 +8,6 @@
                   <group>
                       <field name="name"/>
                       <field name="dish_ids"/>
-                      <field name="price" options='{"type": "number", "step": 1}'/>
                   </group>
               </sheet>
           </form>
