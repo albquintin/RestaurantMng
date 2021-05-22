@@ -1,0 +1,63 @@
+<odoo>
+    <report
+        id="report_order"
+        model="restaurantmng.order"
+        string="Order Report"
+        report_type="qweb-pdf"
+        name="RestaurantMng.report_order_view"
+        file="RestaurantMng.report_order"
+    />
+
+    <template id="minimal_layout_inherit" inherit_id="web.minimal_layout">
+      <xpath expr="//head" position="inside">
+             <link rel='stylesheet' href="/RestaurantMng/static/src/css/style.css"/>
+      </xpath>
+    </template>
+
+    <template id="report_order_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                
+                <div class="header">
+                    <img src='/RestaurantMng/static/src/img/logo.png'/>
+                    <h1>RestaurantMng</h1>
+                </div> 
+                <hr></hr>
+                <div class="page">
+                    <h1 t-field="doc.order_number"/>
+                    <p style="font-size: 22px;"><b>Client:</b> <span t-field="doc.client_id"/> </p>
+                    <p style="font-size: 22px;"><b>Delivered by:</b> <span t-field="doc.delivery_id"/> </p>
+                    <h2>Dishes:</h2>
+                    <ul>
+                        <t t-foreach="doc.dish_ids" t-as="dish">
+                            <li>
+                                <span t-field="dish.name" style="font-size: 22px;"/>
+                                <span t-field="dish.price" style="font-size: 22px;"/>€
+                            </li>
+                        </t>
+                    </ul>
+                    <h2>Menus:</h2>
+                    <ul>
+                        <t t-foreach="doc.menu_ids" t-as="menu">
+                            <li>
+                              <span t-field="menu.name" style="font-size: 22px;"/>
+                              <span t-field="menu.price" style="font-size: 22px;"/>€
+                            </li>
+                        </t>
+                    </ul>
+                    <h2>Drinks:</h2>
+                    <ul>
+                        <t t-foreach="doc.drink_ids" t-as="drink">
+                            <li>
+                              <span t-field="drink.name" style="font-size: 22px;"/>
+                              <span t-field="drink.price" style="font-size: 22px;"/>€
+                            </li>
+                        </t>
+                    </ul>
+                    <p style="font-size: 22px;"><b>Total Price:</b> <span t-field="doc.total_price"/>€ </p>
+                </div>
+                
+            </t>
+        </t>
+    </template>
+</odoo>

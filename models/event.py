@@ -3,6 +3,7 @@ from odoo import models, fields
 class Event(models.Model):
   _name = 'restaurantmng.event'
 
+  name = fields.Char(string="Name", required=True)
   event_date = fields.Date()
   num_people = fields.Integer()
   service_ids = fields.Many2many('restaurantmng.service', string="Service People")

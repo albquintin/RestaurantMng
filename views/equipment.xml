@@ -25,6 +25,7 @@
             <field name="brand"/>
             <field name="buying_date"/>
             <field name="price"/>
+            <field name="years_of_use"/>
           </tree>
       </field>
   </record>
@@ -34,8 +35,26 @@
       <field name="res_model">restaurantmng.equipment</field>
       <field name="view_mode">tree,form</field>
       <field name="help" type="html">
-          <p class="o_view_nocontent_smiling_face">Create a new piece of equipment
+          <p class="o_view_nocontent_smiling_face">Insert a new piece of equipment
           </p>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="equipment_search_view">
+      <field name="name">equipment.search</field>
+      <field name="model">restaurantmng.equipment</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="name"/>
+              <filter name="cheap_equipment" string="Cheap Equipment"
+                      domain="[('price', '&lt;', 300)]"/>
+              <filter name="expensive_equipment" string="Expensive Equipment"
+                      domain="[('price', '&gt;', 300)]"/>
+              <group string="Group By">
+                  <filter name="by_brand" string="Brand"
+                          context="{'group_by': 'brand'}"/>
+              </group>
+          </search>
       </field>
   </record>
 

@@ -13,10 +13,12 @@ class Order(models.Model):
   neighborhood = fields.Char(compute='_get_neighborhood')
   total_price = fields.Integer(compute='_calculate_price')
 
-  @api.depends('dish_ids', 'menu_ids', 'drink_ids')
+  @api.depends('dish_ids', 'menu_ids', 'drink_ids', 'client_id')
   def _calculate_price(self):
       for r in self:
           r.total_price = sum(dish.price for dish in r.dish_ids) + sum(menu.price for menu in r.menu_ids) + sum(drink.price for drink in r.drink_ids)
+          if(r.client_id.is_vip):
+              r.total_price = r.total_price*0.9
 
   @api.depends('client_id')
   def _get_neighborhood(self):

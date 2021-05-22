@@ -10,6 +10,8 @@
                       <field name="dish_type"/>
                       <field name="ingredient_ids"/>
                       <field name="is_vegan"/>
+                      <field name="non_gluten"/>
+                      <field name="spicy"/>
                       <field name="price" options='{"type": "number", "step": 1}'/>
                   </group>
               </sheet>
@@ -26,6 +28,8 @@
             <field name="dish_type"/>
             <field name="ingredient_ids"/>
             <field name="is_vegan"/>
+            <field name="non_gluten"/>
+            <field name="spicy"/>
             <field name="price"/>
           </tree>
       </field>
@@ -38,6 +42,26 @@
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Insert a new dish
           </p>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="dish_search_view">
+      <field name="name">dish.search</field>
+      <field name="model">restaurantmng.dish</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="name"/>
+              <filter name="vegan_dishes" string="Vegan Dishes"
+                      domain="[('is_vegan', '=', 'true')]"/>
+              <filter name="non_gluten" string="Non Gluten"
+                      domain="[('non_gluten', '=', 'true')]"/>
+              <filter name="spicy" string="Spicy"
+                      domain="[('spicy', '=', 'true')]"/>
+              <group string="Group By">
+                  <filter name="by_dish_type" string="Dish Type"
+                          context="{'group_by': 'dish_type'}"/>
+              </group>
+          </search>
       </field>
   </record>
 

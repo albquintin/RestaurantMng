@@ -10,7 +10,6 @@
                         <group colspan="2" col="2">
                             <separator string="General stuff" colspan="2"/>
                             <field name="name"/>
-                            <field name="surname"/>
                             <field name="dni"/>
                             <field name="social_security"/>
                             <field name="address"/>
@@ -35,7 +34,6 @@
         <field name="arch" type="xml">
             <tree string="Manager Tree">
                 <field name="name"/>
-                <field name="surname"/>
                 <field name="dni"/>
                 <field name="social_security"/>
                 <field name="address"/>
@@ -58,6 +56,24 @@
         </field>
     </record>
 
+    <record model="ir.ui.view" id="manager_search_view">
+      <field name="name">manager.search</field>
+      <field name="model">restaurantmng.manager</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="name"/>
+              <filter name="experienced" string="Experienced"
+                      domain="[('years_experience', '&gt;', 10)]"/>
+              <filter name="junior" string="Junior"
+                      domain="[('years_experience', '&lt;', 3)]"/>
+              <group string="Group By">
+                  <filter name="by_working_area" string="Working Area"
+                          context="{'group_by': 'working_area'}"/>
+              </group>
+          </search>
+      </field>
+  </record>
+
     <menuitem id="staff_menu" name="Staff"
                   parent="main_restaurantmng_menu"/>
 
@@ -76,7 +92,6 @@
                         <group colspan="2" col="2">
                             <separator string="General stuff" colspan="2"/>
                             <field name="name"/>
-                            <field name="surname"/>
                             <field name="dni"/>
                             <field name="social_security"/>
                             <field name="address"/>
@@ -101,7 +116,6 @@
         <field name="arch" type="xml">
             <tree string="Chef Tree">
                 <field name="name"/>
-                <field name="surname"/>
                 <field name="dni"/>
                 <field name="social_security"/>
                 <field name="address"/>
@@ -139,7 +153,6 @@
                         <group colspan="2" col="2">
                             <separator string="General stuff" colspan="2"/>
                             <field name="name"/>
-                            <field name="surname"/>
                             <field name="dni"/>
                             <field name="social_security"/>
                             <field name="address"/>
@@ -163,7 +176,6 @@
         <field name="arch" type="xml">
             <tree string="Service Staff Tree">
                 <field name="name"/>
-                <field name="surname"/>
                 <field name="dni"/>
                 <field name="social_security"/>
                 <field name="address"/>
@@ -200,7 +212,6 @@
                         <group colspan="2" col="2">
                             <separator string="General stuff" colspan="2"/>
                             <field name="name"/>
-                            <field name="surname"/>
                             <field name="dni"/>
                             <field name="social_security"/>
                             <field name="address"/>
@@ -223,7 +234,6 @@
         <field name="arch" type="xml">
             <tree string="Cleaning Staff Tree">
                 <field name="name"/>
-                <field name="surname"/>
                 <field name="dni"/>
                 <field name="social_security"/>
                 <field name="address"/>
@@ -259,7 +269,6 @@
                         <group colspan="2" col="2">
                             <separator string="General stuff" colspan="2"/>
                             <field name="name"/>
-                            <field name="surname"/>
                             <field name="dni"/>
                             <field name="social_security"/>
                             <field name="address"/>
@@ -284,7 +293,6 @@
         <field name="arch" type="xml">
             <tree string="Delivery Tree">
                 <field name="name"/>
-                <field name="surname"/>
                 <field name="dni"/>
                 <field name="social_security"/>
                 <field name="address"/>

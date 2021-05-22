@@ -1,10 +1,9 @@
-from odoo import models, fields
+from odoo import models, fields, api, exceptions
 
 class Staff(models.Model):
     _name = 'restaurantmng.staff'
 
     name = fields.Char(string="Name", required=True)
-    surname = fields.Char(string="Surname", required=True)
     dni = fields.Char(required=True)
     social_security = fields.Char(required=True)
     address = fields.Char()
@@ -17,7 +16,7 @@ class Manager(models.Model):
     _inherit = 'restaurantmng.staff'
 
     years_experience = fields.Integer()
-    working_area = fields.Char()
+    working_area = fields.Selection([('management', 'Management'), ('marketing', 'Marketing'), ('team leader', 'Team Leader')], required=True)
 
 class Chef(models.Model):
     _name = 'restaurantmng.chef'
@@ -45,4 +44,10 @@ class Delivery(models.Model):
 
     own_vehicle = fields.Boolean()
     vehicle = fields.Selection([('motorcycle', 'Motorcycle'), ('bike', 'Bike'), ('car', 'Car')])
+
+    @api.constrains('own_vehicle', 'vehicle')
+    def _check_delivery_person_has_vehicle(self):
+        for r in self:
+            if not r.own_vehicle and r.vehicle:
+                raise exceptions.ValidationError("Mark if the person has a vehicle before adding it")
 

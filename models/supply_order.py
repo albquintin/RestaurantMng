@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api, exceptions
 
 class Supply_Order(models.Model):
   _name = 'restaurantmng.supply_order'
@@ -14,12 +14,24 @@ class Food_Order(models.Model):
   food_supplier_id = fields.Many2one('restaurantmng.food_supplier', string="Supplier", required=True)
   ingredient_ids = fields.Many2many('restaurantmng.ingredient', string="Ingredient", required=True)
 
+  @api.constrains('food_supplier_id', 'ingredients_ids')
+  def _check_supplier_supply_ingredient(self):
+      for r in self:
+          if r.ingredient_ids not in r.food_supplier_id.ingredient_ids:
+              raise exceptions.ValidationError("The supplier doesn't supply this")
+
 class Equipment_Order(models.Model):
   _name = 'restaurantmng.equipment_order'
   _inherit = 'restaurantmng.supply_order'
 
   equipment_supplier_id = fields.Many2one('restaurantmng.equipment_supplier', string="Supplier", required=True)
   equipment_ids = fields.Many2many('restaurantmng.equipment', string="Equipment", required=True)
+
+  @api.constrains('equipment_supplier_id', 'equipment_ids')
+  def _check_supplier_supply_equipment(self):
+      for r in self:
+          if r.equipment_ids not in r.equipment_supplier_id.equipment_ids:
+              raise exceptions.ValidationError("The supplier doesn't supply this")
 
 class Drink_Order(models.Model):
   _name = 'restaurantmng.drink_order'
@@ -28,3 +40,8 @@ class Drink_Order(models.Model):
   drink_supplier_id = fields.Many2one('restaurantmng.drink_supplier', string="Supplier", required=True)
   drink_ids = fields.Many2many('restaurantmng.drink', string="Drink", required=True)
 
+  @api.constrains('drink_supplier_id', 'drink_ids')
+  def _check_supplier_supply_drink(self):
+      for r in self:
+          if r.drink_ids not in r.drink_supplier_id.drink_ids:
+              raise exceptions.ValidationError("The supplier doesn't supply this")

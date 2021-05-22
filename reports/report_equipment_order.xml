@@ -1,0 +1,45 @@
+<odoo>
+    <report
+        id="report_equipment_order"
+        model="restaurantmng.equipment_order"
+        string="Equipment Order Report"
+        report_type="qweb-pdf"
+        name="RestaurantMng.report_equipment_order_view"
+        file="RestaurantMng.report_equipment_order"
+    />
+
+    <template id="minimal_layout_inherit" inherit_id="web.minimal_layout">
+      <xpath expr="//head" position="inside">
+             <link rel='stylesheet' href="/RestaurantMng/static/src/css/style.css"/>
+      </xpath>
+    </template>
+
+    <template id="report_equipment_order_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                
+                <div class="header">
+                    <img src='/RestaurantMng/static/src/img/logo.png'/>
+                    <h1>RestaurantMng</h1>
+                </div> 
+                <hr></hr>
+                <div class="page">
+                    <h1>Equipment Order</h1>
+                    <p style="font-size: 22px;"><b>Managed by:</b> <span t-field="doc.manager_id"/> </p>
+                    <p style="font-size: 22px;"><b>Supplier:</b> <span t-field="doc.equipment_supplier_id"/></p>
+                    <p style="font-size: 22px;"><b>Date:</b> <span t-field="doc.order_date"/> </p>
+                    <p style="font-size: 22px;"><b>Price:</b> <span t-field="doc.total_price"/>€</p>
+                    <h2>Products:</h2>
+                    <ul>
+                        <t t-foreach="doc.equipment_ids" t-as="equipment">
+                            <li>
+                                <span t-field="equipment.name" style="font-size: 22px;"/>
+                            </li>
+                        </t>
+                    </ul>
+                </div>
+                
+            </t>
+        </t>
+    </template>
+</odoo>

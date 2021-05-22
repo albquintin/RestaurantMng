@@ -26,10 +26,21 @@
       </field>
   </record>
 
+  <record model="ir.ui.view" id="menu_graph_view">
+    <field name="name">menu.graph</field>
+    <field name="model">restaurantmng.menu</field>
+    <field name="arch" type="xml">
+        <graph string="Menus by price">
+            <field name="name"/>
+            <field name="price" type="measure"/>
+        </graph>
+    </field>
+  </record>
+
   <record model="ir.actions.act_window" id="menu_list_action">
       <field name="name">Menu</field>
       <field name="res_model">restaurantmng.menu</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,graph</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Create a new menu
           </p>

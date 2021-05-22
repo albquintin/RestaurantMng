@@ -27,10 +27,21 @@
       </field>
   </record>
 
+  <record model="ir.ui.view" id="neighborhood_graph_view">
+    <field name="name">neighborhood.graph</field>
+    <field name="model">restaurantmng.neighborhood</field>
+    <field name="arch" type="xml">
+        <graph string="Neighborhoods by Population">
+            <field name="name"/>
+            <field name="population" type="measure"/>
+        </graph>
+    </field>
+  </record>
+
   <record model="ir.actions.act_window" id="neighborhood_list_action">
       <field name="name">Neighborhood</field>
       <field name="res_model">restaurantmng.neighborhood</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,graph</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Insert a new neighborhood
           </p>

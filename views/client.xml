@@ -7,7 +7,6 @@
               <sheet>
                   <group>
                     <field name="name"/>
-                    <field name="surname"/>
                     <field name="mobile"/>
                     <field name="email"/>
                     <field name="neighborhood_id"/>
@@ -24,7 +23,6 @@
       <field name="arch" type="xml">
           <tree string="Client Tree">
             <field name="name"/>
-            <field name="surname"/>
             <field name="mobile"/>
             <field name="email"/>
             <field name="neighborhood_id"/>
@@ -40,6 +38,22 @@
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Insert a new client
           </p>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="client_search_view">
+      <field name="name">client.search</field>
+      <field name="model">restaurantmng.client</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="name"/>
+              <filter name="vip_clients" string="Vip Clients"
+                      domain="[('is_vip', '=', 'true')]"/>
+              <group string="Group By">
+                  <filter name="by_neighborhood" string="By Neighborhood"
+                          context="{'group_by': 'neighborhood_id'}"/>
+              </group>
+          </search>
       </field>
   </record>
 

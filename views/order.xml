@@ -37,16 +37,32 @@
       </field>
   </record>
 
-    <record model="ir.ui.view" id="order_pivot_view">
-        <field name="name">order.pivot</field>
-        <field name="model">restaurantmng.order</field>
-        <field name="arch" type="xml">
-            <pivot string="Trip">
-                <field name="client_id" type="row"/>
-                <field name="order_number"/>
-            </pivot>
-        </field>
-    </record>
+  <record model="ir.ui.view" id="order_pivot_view">
+      <field name="name">order.pivot</field>
+      <field name="model">restaurantmng.order</field>
+      <field name="arch" type="xml">
+          <pivot string="Trip">
+              <field name="client_id" type="row"/>
+              <field name="order_number"/>
+          </pivot>
+      </field>
+  </record>
+
+  <record model="ir.ui.view" id="order_search_view">
+      <field name="name">order.search</field>
+      <field name="model">restaurantmng.order</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="order_number"/>
+              <filter name="expensive_orders" string="Expensive Orders"
+                      domain="[('total_price', '&gt;', 100)]"/>
+              <group string="Group By">
+                  <filter name="by_neighborhood" string="Neighborhood"
+                          context="{'group_by': 'neighborhood'}"/>
+              </group>
+          </search>
+      </field>
+  </record>
 
   <record model="ir.actions.act_window" id="order_list_action">
       <field name="name">Order</field>

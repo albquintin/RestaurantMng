@@ -12,6 +12,7 @@
             </header>
               <sheet>
                   <group>
+                    <field name="name"/>
                     <field name="event_date"/>
                     <field name="num_people"/>
                     <field name="service_ids"/>
@@ -27,6 +28,7 @@
       <field name="model">restaurantmng.event</field>
       <field name="arch" type="xml">
           <tree decoration-muted="state == '1.draft'" decoration-success="state == '2.confirm'" decoration-danger="state == '3.done'" string="Event Tree">
+            <field name="name"/>
             <field name="event_date"/>
             <field name="num_people"/>
             <field name="service_ids"/>
@@ -36,10 +38,58 @@
       </field>
   </record>
 
+  <record model="ir.ui.view" id="event_kanban_view">
+        <field name="name">restaurantmng.event.kanban</field>
+        <field name="model">restaurantmng.event</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="color"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div
+                                t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
+                                            oe_kanban_global_click_edit oe_semantic_html_override
+                                            oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
+                            <div class="oe_dropdown_kanban">
+                                <div class="oe_dropdown_toggle">
+                                    <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
+                                    <ul class="oe_dropdown_menu">
+                                        <li>
+                                            <a type="delete">Delete</a>
+                                        </li>
+                                        <li>
+                                            <ul class="oe_kanban_colorpicker"
+                                                data-field="color"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="oe_clear"></div>
+                            </div>
+                            <div t-attf-class="oe_kanban_content">
+                                Event Name:
+                                <field name="name"/>
+                                <br/>
+                                Event Date:
+                                <field name="event_date"/>
+                                <br/>
+                                Num People:
+                                <field name="num_people"/>
+                                <br/>
+                                State:
+                                <field name="state"/>
+                                
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
   <record model="ir.actions.act_window" id="event_list_action">
       <field name="name">Event</field>
       <field name="res_model">restaurantmng.event</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Create a new event
           </p>

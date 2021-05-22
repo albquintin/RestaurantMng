@@ -39,6 +39,20 @@
       </field>
   </record>
 
+  <record model="ir.ui.view" id="drink_search_view">
+      <field name="name">drink.search</field>
+      <field name="model">restaurantmng.drink</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="name"/>
+              <filter name="alcoholic_drinks" string="Alcoholic Drinks"
+                      domain="[('is_alcoholic', '=', 'true')]"/>
+              <filter name="non_alcoholic_drinks" string="Non Alcoholic Drinks"
+                      domain="[('is_alcoholic', '=', 'false')]"/>
+          </search>
+      </field>
+  </record>
+
   <menuitem id="drink_menu" name="Drinks"
     parent="restaurantmng_menu"
     action="drink_list_action"/>

@@ -29,5 +29,10 @@
         'views/neighborhood.xml',
         'views/order.xml',
         'views/event.xml',
+        'reports/report_event.xml',
+        'reports/report_order.xml',
+        'reports/report_food_order.xml',
+        'reports/report_drink_order.xml',
+        'reports/report_equipment_order.xml',
     ],
 }
