@@ -1,0 +1,1636 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* RestaurantMng
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20210521\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-23 15:15+0000\n"
+"PO-Revision-Date: 2021-05-23 15:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_order_view
+msgid "<b>Client:</b>"
+msgstr "<b>Cliente:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_drink_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_equipment_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_event_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_food_order_view
+msgid "<b>Date:</b>"
+msgstr "<b>Fecha:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_order_view
+msgid "<b>Delivered by:</b>"
+msgstr "<b>Entregado por:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_event_view
+msgid "<b>Event:</b>"
+msgstr "<b>Evento:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.restaurant_kanban_view
+msgid "<b>Founder:</b>"
+msgstr "<b>Fundador:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_drink_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_equipment_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_food_order_view
+msgid "<b>Managed by:</b>"
+msgstr "<b>Administrado por:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_event_view
+msgid "<b>People:</b>"
+msgstr "<b>Personas:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_drink_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_equipment_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_food_order_view
+msgid "<b>Price:</b>"
+msgstr "<b>Precio:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_drink_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_equipment_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_food_order_view
+msgid "<b>Supplier:</b>"
+msgstr "<b>Proveedor:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_order_view
+msgid "<b>Total Price:</b>"
+msgstr "<b>Precio total:</b>"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_kanban_view
+msgid ""
+"<br/>\n"
+"                                Managed by:"
+msgstr ""
+"<br/>\n"
+"                                Administrado por:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_kanban_view
+msgid ""
+"<br/>\n"
+"                                Supplier:"
+msgstr ""
+"<br/>\n"
+"                                Proveedor:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_kanban_view
+msgid ""
+"<br/>\n"
+"                                Total price:"
+msgstr ""
+"<br/>\n"
+"                                Precio total:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_kanban_view
+msgid ""
+"<br/>\n"
+"                            Event Date:"
+msgstr ""
+"<br/>\n"
+"                            Fecha del evento:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_kanban_view
+msgid ""
+"<br/>\n"
+"                            Num People:"
+msgstr ""
+"<br/>\n"
+"                            Número de personas:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_kanban_view
+msgid ""
+"<br/>\n"
+"                            State:"
+msgstr ""
+"<br/>\n"
+"                            Estado:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_kanban_view
+msgid "<i class=\"fa fa-bars fa-lg\" title=\"Manage\" aria-label=\"Manage\"/>"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__address
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__address
+msgid "Address"
+msgstr "Dirección"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drink_search_view
+msgid "Alcoholic Drinks"
+msgstr "Bebidas Alcohólicas"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__area
+msgid "Area"
+msgstr "Área"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_service__area__bar
+msgid "Bar"
+msgstr "Bar"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_delivery__vehicle__bike
+msgid "Bike"
+msgstr "Bicicleta"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__brand
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipment_search_view
+msgid "Brand"
+msgstr "Marca"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__buying_date
+msgid "Buying Date"
+msgstr "Fecha de compra"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.client_search_view
+msgid "By Neighborhood"
+msgstr "Por barrio"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_delivery__vehicle__car
+msgid "Car"
+msgstr "Coche"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipment_search_view
+msgid "Cheap Equipment"
+msgstr "Equipamiento barato"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.chef_list_action
+msgid "Chef"
+msgstr "Chef"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.chef_form_view
+msgid "Chef Form"
+msgstr "Formulario de Chef"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.chef_tree_view
+msgid "Chef Tree"
+msgstr "Datos de Chefs"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__chef_ids
+#: model:ir.ui.menu,name:RestaurantMng.chef_menu
+msgid "Chefs"
+msgstr ""
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_event_view
+msgid "Chefs:"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.cleaning_list_action
+msgid "Cleaning"
+msgstr "Limpieza"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.cleaning_menu
+msgid "Cleaning People"
+msgstr "Personal de Limpieza"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.cleaning_form_view
+msgid "Cleaning Staff Form"
+msgstr "Formulario del personal de limpieza"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.cleaning_tree_view
+msgid "Cleaning Staff Tree"
+msgstr "Datos del personal de limpieza"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.client_list_action
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__client_id
+msgid "Client"
+msgstr "Cliente"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.client_form_view
+msgid "Client Form"
+msgstr "Formulario del cliente"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.client_tree_view
+msgid "Client Tree"
+msgstr "Datos de los clientes"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.clientzone_menu
+msgid "Client Zone"
+msgstr "Zona Clientes"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.client_menu
+msgid "Clients"
+msgstr "Clientes"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__color
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__color
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__color
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__color
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__color
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__color
+msgid "Color"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_drink_order__state__2_confirm
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_equipment_order__state__2_confirm
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_event__state__2_confirm
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_food_order__state__2_confirm
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_supply_order__state__2_confirm
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_form_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__contact_person
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__contact_person
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__contact_person
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__contact_person
+msgid "Contact Person"
+msgstr "Persona de contacto"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__country
+msgid "Country"
+msgstr "País"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.drinkorder_list_action
+msgid "Create a new Drink Order"
+msgstr "Crea un nuevo pedido de bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.equipmentorder_list_action
+msgid "Create a new Equipment Order"
+msgstr "Crea un nuevo pedido de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.foodorder_list_action
+msgid "Create a new Food Order"
+msgstr "Crea un nuevo pedido de alimentos"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.order_list_action
+msgid "Create a new Order"
+msgstr "Crea un nuevo pedido"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.event_list_action
+msgid "Create a new event"
+msgstr "Crea un nuevo evento"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.menu_list_action
+msgid "Create a new menu"
+msgstr "Crea un nuevo menú"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.restaurant_list_action
+msgid "Create a new restaurant"
+msgstr "Crea un nuevo restaurante"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__create_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__create_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_kanban_view
+msgid "Delete"
+msgstr "Borrar"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.delivery_list_action
+msgid "Delivery"
+msgstr "Envíos"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.delivery_menu
+msgid "Delivery People"
+msgstr "Personal de envíos"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__delivery_id
+msgid "Delivery Person"
+msgstr "Rrepartidor"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.delivery_form_view
+msgid "Delivery Staff Form"
+msgstr "Formulario de Repartidores"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.delivery_tree_view
+msgid "Delivery Tree"
+msgstr "Datos de repartidores"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_dish__dish_type__dessert
+msgid "Dessert"
+msgstr "Postre"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.dish_list_action
+msgid "Dish"
+msgstr "Plato"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_form_view
+msgid "Dish Form"
+msgstr "Formulario de platos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_tree_view
+msgid "Dish Tree"
+msgstr "Datos de platos"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__dish_type
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_search_view
+msgid "Dish Type"
+msgstr "Tipo de plato"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__dish_ids
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__dish_ids
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__dish_ids
+#: model:ir.ui.menu,name:RestaurantMng.dish_menu
+msgid "Dishes"
+msgstr "Platos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_graph_view
+msgid "Dishes by price"
+msgstr "Platos por precio"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_order_view
+msgid "Dishes:"
+msgstr "Platos:"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__display_name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__dni
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__dni
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__dni
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__dni
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__dni
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__dni
+msgid "Dni"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_drink_order__state__3_done
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_equipment_order__state__3_done
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_event__state__3_done
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_food_order__state__3_done
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_supply_order__state__3_done
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_form_view
+msgid "Done"
+msgstr "Hecho"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_drink_order__state__1_draft
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_equipment_order__state__1_draft
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_event__state__1_draft
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_food_order__state__1_draft
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_supply_order__state__1_draft
+msgid "Draft"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.drink_list_action
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__drink_ids
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__drink_id
+msgid "Drink"
+msgstr "Bebida"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drink_form_view
+msgid "Drink Form"
+msgstr "Formulario de bebida"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.drinkorder_list_action
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_pivot_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_drink_order_view
+msgid "Drink Order"
+msgstr "Pedido de bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_form_view
+msgid "Drink Order Form"
+msgstr "Formulario de pedido de bebidas"
+
+#. module: RestaurantMng
+#: model:ir.actions.report,name:RestaurantMng.report_drink_order
+msgid "Drink Order Report"
+msgstr "Reporte de pedido de bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_tree_view
+msgid "Drink Order Tree"
+msgstr "Datos de pedidos de bebidas"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.drinkorder_menu
+msgid "Drink Orders"
+msgstr "Pedidos de bebidas"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.drinksupplier_list_action
+msgid "Drink Supplier"
+msgstr "Proveedores de bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinksupplier_form_view
+msgid "Drink Supplier Form"
+msgstr "Formulario de proveedores de bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinksupplier_tree_view
+msgid "Drink Supplier Tree"
+msgstr "Datos de proveedores de bebidas"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.drinksupplier_menu
+msgid "Drink Suppliers"
+msgstr "Proveedores de bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drink_tree_view
+msgid "Drink Tree"
+msgstr "Datos de bebidas"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__drink_ids
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__drink_ids
+#: model:ir.ui.menu,name:RestaurantMng.drink_menu
+msgid "Drinks"
+msgstr "Bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drink_graph_view
+msgid "Drinks by price"
+msgstr "Bebidas por precio"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_order_view
+msgid "Drinks:"
+msgstr "Bebidas:"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__email
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__email
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__email
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__email
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__email
+msgid "Email"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.equipment_list_action
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__equipment_ids
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__equipment_ids
+#: model:ir.ui.menu,name:RestaurantMng.equipment_menu
+msgid "Equipment"
+msgstr "Equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipment_form_view
+msgid "Equipment Form"
+msgstr "Formulario de equipamiento"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.equipmentorder_list_action
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_pivot_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_equipment_order_view
+msgid "Equipment Order"
+msgstr "Pedido de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_form_view
+msgid "Equipment Order Form"
+msgstr "Formulario de pedido de equipamiento"
+
+#. module: RestaurantMng
+#: model:ir.actions.report,name:RestaurantMng.report_equipment_order
+msgid "Equipment Order Report"
+msgstr "Reporte de pedido de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_tree_view
+msgid "Equipment Order Tree"
+msgstr "Datos de pedidos de equipamiento"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.equipmentorder_menu
+msgid "Equipment Orders"
+msgstr "Pedidos de equipamiento"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.equipmentsupplier_list_action
+msgid "Equipment Supplier"
+msgstr "Proveedores de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentsupplier_form_view
+msgid "Equipment Supplier Form"
+msgstr "Formulario de proveedores de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentsupplier_tree_view
+msgid "Equipment Supplier Tree"
+msgstr "Datos de proveedores de equipamiento"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.equipmentsupplier_menu
+msgid "Equipment Suppliers"
+msgstr "Proveedores de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipment_tree_view
+msgid "Equipment Tree"
+msgstr "Datos de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipment_graph_view
+msgid "Equipment by price"
+msgstr "Equipamiento por precio"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.event_list_action
+msgid "Event"
+msgstr "Evento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_calendar_view
+msgid "Event Calendar"
+msgstr "Calendario de eventos"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__event_date
+msgid "Event Date"
+msgstr "Fecha del evento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_form_view
+msgid "Event Form"
+msgstr "Formulario de evento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_kanban_view
+msgid "Event Name:"
+msgstr "Nombre del evento:"
+
+#. module: RestaurantMng
+#: model:ir.actions.report,name:RestaurantMng.report_event
+msgid "Event Report"
+msgstr "Reporte del evento"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_tree_view
+msgid "Event Tree"
+msgstr "Datos del evento"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.event_menu
+msgid "Events"
+msgstr "Eventos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipment_search_view
+msgid "Expensive Equipment"
+msgstr "Equipamiento caro"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.order_search_view
+msgid "Expensive Orders"
+msgstr "Pedidos de coste elevado"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_search_view
+msgid "Experienced"
+msgstr "Experimentado"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.foodorder_list_action
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_pivot_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_food_order_view
+msgid "Food Order"
+msgstr "Pedido de alimentos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_form_view
+msgid "Food Order Form"
+msgstr "Formulario de pedido de alimentos"
+
+#. module: RestaurantMng
+#: model:ir.actions.report,name:RestaurantMng.report_food_order
+msgid "Food Order Report"
+msgstr "Reporte de pedido de alimentos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_tree_view
+msgid "Food Order Tree"
+msgstr "Datos de pedidos de alimentos"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.foodorder_menu
+msgid "Food Orders"
+msgstr "Pedidos de alimentos"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.foodsupplier_list_action
+msgid "Food Supplier"
+msgstr "Proveedores de alimentos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodsupplier_form_view
+msgid "Food Supplier Form"
+msgstr "Formulario de proveedores de alimentos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodsupplier_tree_view
+msgid "Food Supplier Tree"
+msgstr "Datos de proveedores de alimentos"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.foodsupplier_menu
+msgid "Food Suppliers"
+msgstr "Proveedores de alimentos"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.chef_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.cleaning_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.delivery_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.service_form_view
+msgid "General stuff"
+msgstr "Datos generales"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.client_search_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_search_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipment_search_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_search_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.order_search_view
+msgid "Group By"
+msgstr "Agrupado por"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__id
+msgid "ID"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.ingredient_list_action
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__ingredient_ids
+msgid "Ingredient"
+msgstr "Ingrediente"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.ingredient_form_view
+msgid "Ingredient Form"
+msgstr "Formulario de ingrediente"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.ingredient_tree_view
+msgid "Ingredient Tree"
+msgstr "Datos de ingredientes"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__ingredient_ids
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__ingredient_ids
+#: model:ir.ui.menu,name:RestaurantMng.ingredient_menu
+msgid "Ingredients"
+msgstr "Ingredientes"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.chef_list_action
+msgid "Insert a new Chef"
+msgstr "Inserte un nuevo Chef"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.cleaning_list_action
+msgid "Insert a new Cleaning Person"
+msgstr "Inserte un nuevo empleado de limpieza"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.delivery_list_action
+msgid "Insert a new Delivery Person"
+msgstr "Inserte un nuevo repartidor"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.drink_list_action
+msgid "Insert a new Drink"
+msgstr "Inserte una nueva bebida"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.drinksupplier_list_action
+msgid "Insert a new Drink Supplier"
+msgstr "Inserte un nuevo proveedor de bebidas"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.equipmentsupplier_list_action
+msgid "Insert a new Equipment Supplier"
+msgstr "Inserte un nuevo proveedor de equipamiento"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.foodsupplier_list_action
+msgid "Insert a new Food Supplier"
+msgstr "Inserte un nuevo proveedor de alimentos"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.manager_list_action
+msgid "Insert a new Manager"
+msgstr "Inserte un nuevo mánager"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.service_list_action
+msgid "Insert a new Service Person"
+msgstr "Inserte un nuevo camarero"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.client_list_action
+msgid "Insert a new client"
+msgstr "Inserte un nuevo cliente"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.dish_list_action
+msgid "Insert a new dish"
+msgstr "Inserte un nuevo plato"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.ingredient_list_action
+msgid "Insert a new ingredient"
+msgstr "Inserte un nuevo ingrediente"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.neighborhood_list_action
+msgid "Insert a new neighborhood"
+msgstr "Inserte un nuevo barrio"
+
+#. module: RestaurantMng
+#: model_terms:ir.actions.act_window,help:RestaurantMng.equipment_list_action
+msgid "Insert a new piece of equipment"
+msgstr "Inserte una nueva pieza de equipamiento"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__is_alcoholic
+msgid "Is Alcoholic"
+msgstr "Es alcohólica"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__is_vegan
+msgid "Is Vegan"
+msgstr "Es vegano"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__is_vip
+msgid "Is Vip"
+msgstr "Es Vip"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.chef_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.cleaning_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.delivery_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.service_form_view
+msgid "Job stuff"
+msgstr "Datos laborales"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_search_view
+msgid "Junior"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier____last_update
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__write_uid
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__write_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_dish__dish_type__main_course
+msgid "Main Course"
+msgstr "Plato principal"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_manager__working_area__management
+msgid "Management"
+msgstr "Administración"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.manager_list_action
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__manager_id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__manager_id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__manager_id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__manager_id
+msgid "Manager"
+msgstr "Mánager"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_form_view
+msgid "Manager Form"
+msgstr "Formulario de mánager"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_tree_view
+msgid "Manager Tree"
+msgstr "Datos de mánagers"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.manager_menu
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_pivot_view
+msgid "Managers"
+msgstr "Mánagers"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_graph_view
+msgid "Managers by years of experience"
+msgstr "Mánagers por años de experiencia"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_manager__working_area__marketing
+msgid "Marketing"
+msgstr "Márketing"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.menu_list_action
+msgid "Menu"
+msgstr "Menú"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.menu_form_view
+msgid "Menu Form"
+msgstr "Formulario de menú"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.menu_tree_view
+msgid "Menu Tree"
+msgstr "Datos de menús"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__menu_ids
+#: model:ir.ui.menu,name:RestaurantMng.menu_menu
+msgid "Menus"
+msgstr "Menús"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.menu_graph_view
+msgid "Menus by price"
+msgstr "Menús por precio"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_order_view
+msgid "Menus:"
+msgstr "Menús"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__mobile
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__mobile_phone
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__mobile_phone
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__mobile_phone
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__mobile_phone
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__mobile_phone
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__mobile_phone
+msgid "Mobile Phone"
+msgstr "Teléfono móvil"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_delivery__vehicle__motorcycle
+msgid "Motorcycle"
+msgstr "Moto"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_supplier__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_supplier__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_supplier__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_ingredient__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__name
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supplier__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__founder
+msgid "Name of the founder"
+msgstr "Nombre del fundador"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.neighborhood_list_action
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_client__neighborhood_id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__neighborhood
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.order_search_view
+msgid "Neighborhood"
+msgstr "Barrio"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.neighborhood_form_view
+msgid "Neighborhood Form"
+msgstr "Formulario del barrio"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.neighborhood_tree_view
+msgid "Neighborhood Tree"
+msgstr "Datos de los barrios"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.neighborhood_menu
+msgid "Neighborhoods"
+msgstr "Barrios"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.neighborhood_graph_view
+msgid "Neighborhoods by Population"
+msgstr "Barrios por población"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drink_search_view
+msgid "Non Alcoholic Drinks"
+msgstr "Bebidas no alcohólicas"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__non_gluten
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_search_view
+msgid "Non Gluten"
+msgstr "Sin gluten"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__num_people
+msgid "Num People"
+msgstr "Número de personas"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.order_list_action
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.order_pivot_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.service_pivot_view
+msgid "Order"
+msgstr "Pedido"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__order_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__order_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__order_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__order_date
+msgid "Order Date"
+msgstr "Fecha de pedido"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.order_form_view
+msgid "Order Form"
+msgstr "Formulario de pedido"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__order_number
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__order_number
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__order_number
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__order_number
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__order_number
+msgid "Order Number"
+msgstr "Número de pedido"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_kanban_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_kanban_view
+msgid "Order Number:"
+msgstr "Número de pedido:"
+
+#. module: RestaurantMng
+#: model:ir.actions.report,name:RestaurantMng.report_order
+msgid "Order Report"
+msgstr "Reporte del pedido"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.order_tree_view
+msgid "Order Tree"
+msgstr "Datos de los pedidos"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.order_menu
+msgid "Orders"
+msgstr "Pedidos"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__own_vehicle
+msgid "Own Vehicle"
+msgstr "Vehículo propio"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__population
+msgid "Population"
+msgstr "Población"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_neighborhood__postcode
+msgid "Postcode"
+msgstr "Código postal"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__price
+msgid "Price"
+msgstr "Precio"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__price
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__price
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_menu__price
+msgid "Price (in €)"
+msgstr "Precio (en €)"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_drink_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_equipment_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_food_order_view
+msgid "Products:"
+msgstr "Productos:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.drinkorder_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.equipmentorder_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.event_form_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.foodorder_form_view
+msgid "Reset to draft"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.restaurant_list_action
+#: model:ir.ui.menu,name:RestaurantMng.restaurant_menu
+msgid "Restaurant"
+msgstr "Restaurante"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.restaurant_form_view
+msgid "Restaurant Form"
+msgstr "Formulario del restaurante"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__restaurant_image
+msgid "Restaurant Image"
+msgstr "Imágen del restaurante"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.restaurant_tree_view
+msgid "Restaurant Tree"
+msgstr "Datos del restaurante"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.main_restaurantmng_menu
+#: model:ir.ui.menu,name:RestaurantMng.restaurantmng_menu
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_drink_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_equipment_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_event_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_food_order_view
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_order_view
+msgid "RestaurantMng"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__salary
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__salary
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__salary
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__salary
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__salary
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__salary
+msgid "Salary (in €, annual)"
+msgstr "Salario (en €, anual)"
+
+#. module: RestaurantMng
+#: model:ir.actions.act_window,name:RestaurantMng.service_list_action
+msgid "Service"
+msgstr "Camareros"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__service_ids
+#: model:ir.ui.menu,name:RestaurantMng.service_menu
+msgid "Service People"
+msgstr "Camarero"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.report_event_view
+msgid "Service People:"
+msgstr "Camareros:"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.service_form_view
+msgid "Service Staff Form"
+msgstr "Formulario del camarero"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.service_tree_view
+msgid "Service Staff Tree"
+msgstr "Datos de los camareros"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__social_security
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__social_security
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__social_security
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__social_security
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__social_security
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__social_security
+msgid "Social Security"
+msgstr "Seguridad Social"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__specialty
+msgid "Specialty"
+msgstr "Especialidad"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_dish__spicy
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_search_view
+msgid "Spicy"
+msgstr "Picante"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.staff_menu
+msgid "Staff"
+msgstr "Personal"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_dish__dish_type__starter
+msgid "Starter"
+msgstr "Entrante"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_chef__starting_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__starting_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__starting_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__starting_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_restaurant__starting_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_service__starting_date
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_staff__starting_date
+msgid "Starting Date"
+msgstr "Fecha de inicio"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__state
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__state
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_event__state
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__state
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__state
+msgid "Status"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__drink_supplier_id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__equipment_supplier_id
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__food_supplier_id
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: RestaurantMng
+#: model:ir.ui.menu,name:RestaurantMng.supply_menu
+msgid "Supply"
+msgstr "Proveedores"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_service__area__tables
+msgid "Tables"
+msgstr "Mesas"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_manager__working_area__team_leader
+msgid "Team Leader"
+msgstr "Líder de equipo"
+
+#. module: RestaurantMng
+#: model:ir.model.fields.selection,name:RestaurantMng.selection__restaurantmng_service__area__terrace
+msgid "Terrace"
+msgstr "Terrazas"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink_order__total_price
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment_order__total_price
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_food_order__total_price
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_order__total_price
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_supply_order__total_price
+msgid "Total Price"
+msgstr "Precio total"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.dish_search_view
+msgid "Vegan Dishes"
+msgstr "Platos veganos"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_delivery__vehicle
+msgid "Vehicle"
+msgstr "Vehículo"
+
+#. module: RestaurantMng
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.client_search_view
+msgid "Vip Clients"
+msgstr "Clientes Vip"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__working_area
+#: model_terms:ir.ui.view,arch_db:RestaurantMng.manager_search_view
+msgid "Working Area"
+msgstr "Área de Trabajo"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_cleaning__working_time
+msgid "Working Time (In h per week)"
+msgstr "Tiempo de trabajo (en horas semanales)"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_manager__years_experience
+msgid "Years Experience"
+msgstr "Años de experiencia"
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_equipment__years_of_use
+msgid "Years of Use"
+msgstr "Años de uso"
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_chef
+msgid "restaurantmng.chef"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_cleaning
+msgid "restaurantmng.cleaning"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_client
+msgid "restaurantmng.client"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_delivery
+msgid "restaurantmng.delivery"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_dish
+msgid "restaurantmng.dish"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_drink
+msgid "restaurantmng.drink"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_drink_order
+msgid "restaurantmng.drink_order"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_drink_supplier
+msgid "restaurantmng.drink_supplier"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_equipment
+msgid "restaurantmng.equipment"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_equipment_order
+msgid "restaurantmng.equipment_order"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_equipment_supplier
+msgid "restaurantmng.equipment_supplier"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_event
+msgid "restaurantmng.event"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_food_order
+msgid "restaurantmng.food_order"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_food_supplier
+msgid "restaurantmng.food_supplier"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_ingredient
+msgid "restaurantmng.ingredient"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_manager
+msgid "restaurantmng.manager"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_menu
+msgid "restaurantmng.menu"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_neighborhood
+msgid "restaurantmng.neighborhood"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_order
+msgid "restaurantmng.order"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_restaurant
+msgid "restaurantmng.restaurant"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_service
+msgid "restaurantmng.service"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_staff
+msgid "restaurantmng.staff"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_supplier
+msgid "restaurantmng.supplier"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model,name:RestaurantMng.model_restaurantmng_supply_order
+msgid "restaurantmng.supply_order"
+msgstr ""
+
+#. module: RestaurantMng
+#: model:ir.model.fields,field_description:RestaurantMng.field_restaurantmng_drink__alcohol_volume
+msgid "º of alcohol"
+msgstr "º de alcohol"

@@ -3,9 +3,36 @@ from odoo import models, fields, api, exceptions
 class Supply_Order(models.Model):
   _name = 'restaurantmng.supply_order'
 
+  order_number = fields.Integer(required=True)
   manager_id = fields.Many2one('restaurantmng.manager', string="Manager", required=True)
   order_date = fields.Date()
   total_price = fields.Integer()
+  color = fields.Integer()
+  state = fields.Selection([
+            ('1.draft', 'Draft'),
+            ('2.confirm', 'Confirm'),
+            ('3.done', 'Done'),
+        ], string='Status', default='1.draft')
+
+  
+  def action_confirm(self):
+    for r in self:
+      r.state = '2.confirm'
+      return {
+        'effect': {
+          'fadeout': 'slow',
+          'message': 'Supply Order Confirmed',
+          'type': 'rainbow_man',
+        }
+      }
+            
+  def action_done(self):
+        for r in self:
+            r.state = '3.done'
+
+  def action_draft(self):
+        for r in self:
+            r.state = '1.draft'
 
 class Food_Order(models.Model):
   _name = 'restaurantmng.food_order'

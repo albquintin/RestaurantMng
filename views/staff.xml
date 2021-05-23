@@ -46,10 +46,32 @@
         </field>
     </record>
 
+    <record model="ir.ui.view" id="manager_graph_view">
+        <field name="name">manager.graph</field>
+        <field name="model">restaurantmng.manager</field>
+        <field name="arch" type="xml">
+            <graph string="Managers by years of experience">
+                <field name="name"/>
+                <field name="years_experience" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="manager_pivot_view">
+        <field name="name">manager.pivot</field>
+        <field name="model">restaurantmng.manager</field>
+        <field name="arch" type="xml">
+            <pivot string="Managers">
+                <field name="working_area" type="row"/>
+                <field name="name"/>
+            </pivot>
+        </field>
+    </record>
+
     <record model="ir.actions.act_window" id="manager_list_action">
         <field name="name">Manager</field>
         <field name="res_model">restaurantmng.manager</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,graph,pivot</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">Insert a new Manager
             </p>
@@ -187,10 +209,21 @@
         </field>
     </record>
 
+    <record model="ir.ui.view" id="service_pivot_view">
+      <field name="name">service.pivot</field>
+      <field name="model">restaurantmng.service</field>
+      <field name="arch" type="xml">
+          <pivot string="Order">
+              <field name="area" type="row"/>
+              <field name="name"/>
+          </pivot>
+      </field>
+    </record>
+
     <record model="ir.actions.act_window" id="service_list_action">
         <field name="name">Service</field>
         <field name="res_model">restaurantmng.service</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,pivot</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">Insert a new Service Person
             </p>
@@ -221,6 +254,7 @@
                             <separator string="Job stuff" colspan="2"/>
                             <field name="salary" options='{"type": "number", "step": 1000}'/>
                             <field name="starting_date"/>
+                            <field name="working_time"/>
                         </group>
                     </group>
                 </sheet>
@@ -240,6 +274,7 @@
                 <field name="mobile_phone"/>
                 <field name="salary"/>
                 <field name="starting_date"/>
+                <field name="working_time"/>
             </tree>
         </field>
     </record>

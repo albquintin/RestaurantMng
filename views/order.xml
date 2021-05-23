@@ -41,7 +41,7 @@
       <field name="name">order.pivot</field>
       <field name="model">restaurantmng.order</field>
       <field name="arch" type="xml">
-          <pivot string="Trip">
+          <pivot string="Order">
               <field name="client_id" type="row"/>
               <field name="order_number"/>
           </pivot>

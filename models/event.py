@@ -4,7 +4,7 @@ class Event(models.Model):
   _name = 'restaurantmng.event'
 
   name = fields.Char(string="Name", required=True)
-  event_date = fields.Date()
+  event_date = fields.Date(required=True)
   num_people = fields.Integer()
   service_ids = fields.Many2many('restaurantmng.service', string="Service People")
   chef_ids = fields.Many2many('restaurantmng.chef', string="Chefs")

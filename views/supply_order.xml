@@ -6,8 +6,15 @@
       <field name="model">restaurantmng.food_order</field>
       <field name="arch" type="xml">
         <form string="Food Order Form">
+          <header>
+            <button name="action_confirm" type="object" string="Confirm" states="1.draft" class="oe_highlight"/>
+            <button name="action_done" type="object" string="Done" states="2.confirm" class="oe_highlight"/>
+            <button name="action_draft" type="object"  string="Reset to draft" states="2.confirm,3.done" />
+            <field name="state" widget="statusbar" statusbar_visible="1.draft,2.confirm,3.done" />
+          </header>
           <sheet>
             <group>
+              <field name="order_number"/>
               <field name="manager_id"/>
               <field name="order_date"/>
               <field name="total_price"/>
@@ -23,20 +30,81 @@
       <field name="name">food_order.tree</field>
       <field name="model">restaurantmng.food_order</field>
       <field name="arch" type="xml">
-          <tree string="Food Order Tree">
+          <tree decoration-muted="state == '1.draft'" decoration-success="state == '2.confirm'" decoration-danger="state == '3.done'" string="Food Order Tree">
+            <field name="order_number"/>
             <field name="manager_id"/>
             <field name="order_date"/>
             <field name="total_price"/>
             <field name="food_supplier_id"/>
             <field name="ingredient_ids"/>
+            <field name="state"/>
           </tree>
       </field>
   </record>
 
+  <record model="ir.ui.view" id="foodorder_pivot_view">
+    <field name="name">food_order.pivot</field>
+    <field name="model">restaurantmng.food_order</field>
+    <field name="arch" type="xml">
+        <pivot string="Food Order">
+            <field name="food_supplier_id" type="row"/>
+            <field name="order_number"/>
+        </pivot>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="foodorder_kanban_view">
+        <field name="name">restaurantmng.food_order.kanban</field>
+        <field name="model">restaurantmng.food_order</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="color"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div
+                                t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
+                                            oe_kanban_global_click_edit oe_semantic_html_override
+                                            oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
+                            <div class="oe_dropdown_kanban">
+                                <div class="oe_dropdown_toggle">
+                                    <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
+                                    <ul class="oe_dropdown_menu">
+                                        <li>
+                                            <a type="delete">Delete</a>
+                                        </li>
+                                        <li>
+                                            <ul class="oe_kanban_colorpicker"
+                                                data-field="color"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="oe_clear"></div>
+                            </div>
+                            <div t-attf-class="oe_kanban_content">
+                                Order Number:
+                                <field name="order_number"/>
+                                <br/>
+                                Supplier:
+                                <field name="food_supplier_id"/>
+                                <br/>
+                                Total price:
+                                <field name="total_price"/>
+                                <br/>
+                                Managed by:
+                                <field name="manager_id"/>
+                                
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
   <record model="ir.actions.act_window" id="foodorder_list_action">
       <field name="name">Food Order</field>
       <field name="res_model">restaurantmng.food_order</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,pivot,kanban</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Create a new Food Order
           </p>
@@ -54,8 +122,15 @@
     <field name="model">restaurantmng.equipment_order</field>
     <field name="arch" type="xml">
       <form string="Equipment Order Form">
+        <header>
+          <button name="action_confirm" type="object" string="Confirm" states="1.draft" class="oe_highlight"/>
+          <button name="action_done" type="object" string="Done" states="2.confirm" class="oe_highlight"/>
+          <button name="action_draft" type="object"  string="Reset to draft" states="2.confirm,3.done" />
+          <field name="state" widget="statusbar" statusbar_visible="1.draft,2.confirm,3.done" />
+        </header>
         <sheet>
           <group>
+            <field name="order_number"/>
             <field name="manager_id"/>
             <field name="order_date"/>
             <field name="total_price"/>
@@ -72,19 +147,80 @@
       <field name="model">restaurantmng.equipment_order</field>
       <field name="arch" type="xml">
           <tree string="Equipment Order Tree">
+            <field name="order_number"/>
             <field name="manager_id"/>
             <field name="order_date"/>
             <field name="total_price"/>
             <field name="equipment_supplier_id"/>
             <field name="equipment_ids"/>
+            <field name="state"/>
           </tree>
       </field>
   </record>
 
+  <record model="ir.ui.view" id="equipmentorder_pivot_view">
+    <field name="name">equipment_order.pivot</field>
+    <field name="model">restaurantmng.equipment_order</field>
+    <field name="arch" type="xml">
+        <pivot string="Equipment Order">
+            <field name="equipment_supplier_id" type="row"/>
+            <field name="order_number"/>
+        </pivot>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="equipmentorder_kanban_view">
+        <field name="name">restaurantmng.equipment_order.kanban</field>
+        <field name="model">restaurantmng.equipment_order</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="color"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div
+                                t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
+                                            oe_kanban_global_click_edit oe_semantic_html_override
+                                            oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
+                            <div class="oe_dropdown_kanban">
+                                <div class="oe_dropdown_toggle">
+                                    <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
+                                    <ul class="oe_dropdown_menu">
+                                        <li>
+                                            <a type="delete">Delete</a>
+                                        </li>
+                                        <li>
+                                            <ul class="oe_kanban_colorpicker"
+                                                data-field="color"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="oe_clear"></div>
+                            </div>
+                            <div t-attf-class="oe_kanban_content">
+                                Order Number:
+                                <field name="order_number"/>
+                                <br/>
+                                Supplier:
+                                <field name="equipment_supplier_id"/>
+                                <br/>
+                                Total price:
+                                <field name="total_price"/>
+                                <br/>
+                                Managed by:
+                                <field name="manager_id"/>
+                                
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
   <record model="ir.actions.act_window" id="equipmentorder_list_action">
       <field name="name">Equipment Order</field>
       <field name="res_model">restaurantmng.equipment_order</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,pivot,kanban</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Create a new Equipment Order
           </p>
@@ -102,8 +238,15 @@
     <field name="model">restaurantmng.drink_order</field>
     <field name="arch" type="xml">
       <form string="Drink Order Form">
+        <header>
+          <button name="action_confirm" type="object" string="Confirm" states="1.draft" class="oe_highlight"/>
+          <button name="action_done" type="object" string="Done" states="2.confirm" class="oe_highlight"/>
+          <button name="action_draft" type="object"  string="Reset to draft" states="2.confirm,3.done" />
+          <field name="state" widget="statusbar" statusbar_visible="1.draft,2.confirm,3.done" />
+        </header>
         <sheet>
           <group>
+            <field name="order_number"/>
             <field name="manager_id"/>
             <field name="order_date"/>
             <field name="total_price"/>
@@ -120,19 +263,80 @@
       <field name="model">restaurantmng.drink_order</field>
       <field name="arch" type="xml">
           <tree string="Drink Order Tree">
+            <field name="order_number"/>
             <field name="manager_id"/>
             <field name="order_date"/>
             <field name="total_price"/>
             <field name="drink_supplier_id"/>
             <field name="drink_ids"/>
+            <field name="state"/>
           </tree>
       </field>
   </record>
 
+  <record model="ir.ui.view" id="drinkorder_pivot_view">
+    <field name="name">drink_order.pivot</field>
+    <field name="model">restaurantmng.drink_order</field>
+    <field name="arch" type="xml">
+        <pivot string="Drink Order">
+            <field name="drink_supplier_id" type="row"/>
+            <field name="order_number"/>
+        </pivot>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="drinkorder_kanban_view">
+        <field name="name">restaurantmng.drink_order.kanban</field>
+        <field name="model">restaurantmng.drink_order</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="color"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div
+                                t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
+                                            oe_kanban_global_click_edit oe_semantic_html_override
+                                            oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
+                            <div class="oe_dropdown_kanban">
+                                <div class="oe_dropdown_toggle">
+                                    <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
+                                    <ul class="oe_dropdown_menu">
+                                        <li>
+                                            <a type="delete">Delete</a>
+                                        </li>
+                                        <li>
+                                            <ul class="oe_kanban_colorpicker"
+                                                data-field="color"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="oe_clear"></div>
+                            </div>
+                            <div t-attf-class="oe_kanban_content">
+                                Order Number:
+                                <field name="order_number"/>
+                                <br/>
+                                Supplier:
+                                <field name="drink_supplier_id"/>
+                                <br/>
+                                Total price:
+                                <field name="total_price"/>
+                                <br/>
+                                Managed by:
+                                <field name="manager_id"/>
+                                
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
   <record model="ir.actions.act_window" id="drinkorder_list_action">
       <field name="name">Drink Order</field>
       <field name="res_model">restaurantmng.drink_order</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,pivot,kanban</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Create a new Drink Order
           </p>

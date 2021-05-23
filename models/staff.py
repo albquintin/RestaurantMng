@@ -30,13 +30,13 @@ class Service(models.Model):
     _name = 'restaurantmng.service'
     _inherit = 'restaurantmng.staff'
 
-    area = fields.Selection([('bar', 'bar'), ('terrace', 'terrace')])
+    area = fields.Selection([('bar', 'Bar'), ('terrace', 'Terrace'), ('tables', 'Tables')])
 
 class Cleaning(models.Model):
     _name = 'restaurantmng.cleaning'
     _inherit = 'restaurantmng.staff'
 
-
+    working_time = fields.Integer(string="Working Time (In h per week)")
 
 class Delivery(models.Model):
     _name = 'restaurantmng.delivery'

@@ -35,10 +35,21 @@
       </field>
   </record>
 
+  <record model="ir.ui.view" id="dish_graph_view">
+    <field name="name">dish.graph</field>
+    <field name="model">restaurantmng.dish</field>
+    <field name="arch" type="xml">
+        <graph string="Dishes by price">
+            <field name="name"/>
+            <field name="price" type="measure"/>
+        </graph>
+    </field>
+  </record>
+
   <record model="ir.actions.act_window" id="dish_list_action">
       <field name="name">Dish</field>
       <field name="res_model">restaurantmng.dish</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,graph</field>
       <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">Insert a new dish
           </p>

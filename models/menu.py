@@ -5,7 +5,7 @@ class Menu(models.Model):
     _order = 'name'
 
     name = fields.Char(string="Name", required=True)
-    dish_ids = fields.Many2many('restaurantmng.dish', string="Dishes")
+    dish_ids = fields.Many2many('restaurantmng.dish', string="Dishes", required=True)
     drink_id = fields.Many2one('restaurantmng.drink', string="Drink", required=True)
     price = fields.Integer(compute='_calculate_price', string="Price (in €)")
 
