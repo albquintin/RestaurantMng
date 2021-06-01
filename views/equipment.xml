@@ -9,7 +9,7 @@
                       <field name="name"/>
                       <field name="brand"/>
                       <field name="buying_date"/>
-                      <field name="price"/>
+                      <field name="price" options='{"type": "number", "step": 10}'/>
                   </group>
               </sheet>
           </form>

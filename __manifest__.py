@@ -16,6 +16,8 @@
     'depends': ['base'],
 
     'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
         'views/restaurant.xml',
         'views/staff.xml',
         'views/ingredient.xml',

@@ -11,7 +11,7 @@ class Order(models.Model):
   delivery_id = fields.Many2one('restaurantmng.delivery', string="Delivery Person", required=True)
   address = fields.Char()
   neighborhood = fields.Char(compute='_get_neighborhood')
-  total_price = fields.Integer(compute='_calculate_price')
+  total_price = fields.Float(compute='_calculate_price')
 
   @api.depends('dish_ids', 'menu_ids', 'drink_ids', 'client_id')
   def _calculate_price(self):

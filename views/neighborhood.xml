@@ -8,7 +8,7 @@
                   <group>
                       <field name="name"/>
                       <field name="postcode"/>
-                      <field name="population" options='{"type": "number", "step": 100}'/>
+                      <field name="population" options='{"type": "number", "step": 1000}'/>
                   </group>
               </sheet>
           </form>

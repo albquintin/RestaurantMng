@@ -8,8 +8,8 @@
             <group>
               <field name="name"/>
               <field name="is_alcoholic"/>
-              <field name="alcohol_volume"/>
-              <field name="price"/>
+              <field name="alcohol_volume" options='{"type": "number", "step": 1}'/>
+              <field name="price" options='{"type": "number", "step": 1}'/>
             </group>
           </sheet>
         </form>
@@ -23,8 +23,8 @@
           <tree string="Drink Tree">
             <field name="name"/>
             <field name="is_alcoholic"/>
-            <field name="alcohol_volume"/>
-            <field name="price"/>
+            <field name="alcohol_volume" />
+            <field name="price" />
           </tree>
       </field>
   </record>

@@ -7,7 +7,7 @@ class Drink(models.Model):
   name = fields.Char(string="Name", required=True)
   is_alcoholic = fields.Boolean()
   alcohol_volume = fields.Integer(string="º of alcohol")
-  price = fields.Integer(string="Price (in €)", required=True)
+  price = fields.Float(string="Price (in €)", required=True)
 
   @api.constrains('is_alcoholic', 'alcohol_volume')
   def _check_drink_is_alcoholic(self):

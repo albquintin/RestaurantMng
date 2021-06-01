@@ -7,7 +7,7 @@ class Equipment(models.Model):
   name = fields.Char(string="Name", required=True)
   brand = fields.Char(required=True)
   buying_date = fields.Date(required=True)
-  price = fields.Integer(required=True)
+  price = fields.Float(required=True)
   years_of_use = fields.Integer(compute='_calculate_years_of_use', string="Years of Use")
 
   @api.depends('buying_date')

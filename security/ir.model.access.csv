@@ -1,0 +1,7 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+restaurantmng_client,restaurantmng.client,model_restaurantmng_client,group_manager,1,1,1,1
+client_read_all,client all,model_restaurantmng_client,,1,1,1,1
+restaurantmng_dish,restaurantmng.dish,model_restaurantmng_dish,group_manager,1,1,1,1
+dish_read_all,dish all,model_restaurantmng_dish,,1,1,1,1
+restaurantmng_delivery,restaurantmng.delivery,model_restaurantmng_delivery,group_manager,1,1,1,1
+delivery_read_all,delivery all,model_restaurantmng_delivery,,1,1,1,1

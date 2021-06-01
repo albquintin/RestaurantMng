@@ -10,7 +10,7 @@ class Dish(models.Model):
     is_vegan = fields.Boolean()
     non_gluten = fields.Boolean()
     spicy = fields.Boolean()
-    price = fields.Integer(string="Price (in €)", required=True)
+    price = fields.Float(string="Price (in €)", required=True)
 
     @api.constrains('price')
     def _check_price_is_positive(self):

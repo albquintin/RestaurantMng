@@ -6,7 +6,7 @@ class Supply_Order(models.Model):
   order_number = fields.Integer(required=True)
   manager_id = fields.Many2one('restaurantmng.manager', string="Manager", required=True)
   order_date = fields.Date()
-  total_price = fields.Integer()
+  total_price = fields.Float()
   color = fields.Integer()
   state = fields.Selection([
             ('1.draft', 'Draft'),
