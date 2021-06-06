@@ -7,6 +7,7 @@
               <sheet>
                   <group>
                     <field name="order_number"/>
+                    <field name="order_date"/>
                     <field name="client_id"/>
                     <field name="dish_ids"/>
                     <field name="menu_ids"/>
@@ -25,6 +26,7 @@
       <field name="arch" type="xml">
           <tree string="Order Tree">
             <field name="order_number"/>
+            <field name="order_date"/>
             <field name="client_id"/>
             <field name="dish_ids"/>
             <field name="menu_ids"/>

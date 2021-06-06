@@ -5,3 +5,5 @@ restaurantmng_dish,restaurantmng.dish,model_restaurantmng_dish,group_manager,1,1
 dish_read_all,dish all,model_restaurantmng_dish,,1,1,1,1
 restaurantmng_delivery,restaurantmng.delivery,model_restaurantmng_delivery,group_manager,1,1,1,1
 delivery_read_all,delivery all,model_restaurantmng_delivery,,1,1,1,1
+restaurantmng_order,restaurantmng.order,model_restaurantmng_order,group_manager,1,1,1,1
+order_read_all,order all,model_restaurantmng_order,,1,1,1,1

@@ -2,6 +2,7 @@ from odoo import models, fields, api, exceptions
 
 class Staff(models.Model):
     _name = 'restaurantmng.staff'
+    _order = 'name'
 
     name = fields.Char(string="Name", required=True)
     dni = fields.Char(required=True)
@@ -9,7 +10,7 @@ class Staff(models.Model):
     address = fields.Char()
     mobile_phone = fields.Char()
     salary = fields.Integer(string="Salary (in €, annual)")
-    starting_date = fields.Date()
+    starting_date = fields.Date(required=True)
 
 class Manager(models.Model):
     _name = 'restaurantmng.manager'
@@ -22,7 +23,7 @@ class Chef(models.Model):
     _name = 'restaurantmng.chef'
     _inherit = 'restaurantmng.staff'
 
-    specialty = fields.Char()
+    specialty = fields.Char(required=True)
     dish_ids = fields.Many2many('restaurantmng.dish', string="Dishes")
 
 
@@ -30,7 +31,7 @@ class Service(models.Model):
     _name = 'restaurantmng.service'
     _inherit = 'restaurantmng.staff'
 
-    area = fields.Selection([('bar', 'Bar'), ('terrace', 'Terrace'), ('tables', 'Tables')])
+    area = fields.Selection([('bar', 'Bar'), ('terrace', 'Terrace'), ('tables', 'Tables')], required=True)
 
 class Cleaning(models.Model):
     _name = 'restaurantmng.cleaning'
@@ -50,4 +51,6 @@ class Delivery(models.Model):
         for r in self:
             if not r.own_vehicle and r.vehicle:
                 raise exceptions.ValidationError("Mark if the person has a vehicle before adding it")
+            elif r.own_vehicle and not r.vehicle:
+                raise exceptions.ValidationError("Please select the vehicle")
 

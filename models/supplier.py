@@ -2,6 +2,7 @@ from odoo import models, fields
 
 class Supplier(models.Model):
   _name = 'restaurantmng.supplier'
+  _order = 'name'
 
   name = fields.Char(string="Name", required=True)
   contact_person = fields.Char()

@@ -2,7 +2,6 @@ from odoo import models, fields
 
 class Restaurant(models.Model):
     _name = 'restaurantmng.restaurant'
-    _order = 'name'
 
     name = fields.Char(string="Name", required=True)
     starting_date = fields.Date()

@@ -2,6 +2,7 @@ from odoo import models, fields, api, exceptions
 
 class Supply_Order(models.Model):
   _name = 'restaurantmng.supply_order'
+  _order = 'order_number'
 
   order_number = fields.Integer(required=True)
   manager_id = fields.Many2one('restaurantmng.manager', string="Manager", required=True)

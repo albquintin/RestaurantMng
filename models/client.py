@@ -2,6 +2,7 @@ from odoo import models, fields
 
 class Client(models.Model):
     _name = 'restaurantmng.client'
+    _order = 'name'
 
     name = fields.Char(string="Name", required=True)
     mobile = fields.Char()

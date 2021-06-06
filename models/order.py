@@ -2,8 +2,10 @@ from odoo import models, fields, api
 
 class Order(models.Model):
   _name = 'restaurantmng.order'
+  _order = 'order_number'
 
   order_number = fields.Integer(required=True)
+  order_date = fields.Date()
   client_id = fields.Many2one('restaurantmng.client', string="Client", required=True)
   dish_ids = fields.Many2many('restaurantmng.dish', string="Dishes")
   menu_ids = fields.Many2many('restaurantmng.menu', string="Menus")

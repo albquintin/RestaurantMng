@@ -94,7 +94,7 @@
               </group>
           </search>
       </field>
-  </record>
+    </record>
 
     <menuitem id="staff_menu" name="Staff"
                   parent="main_restaurantmng_menu"/>
@@ -230,6 +230,20 @@
         </field>
     </record>
 
+    <record model="ir.ui.view" id="service_search_view">
+      <field name="name">service.search</field>
+      <field name="model">restaurantmng.service</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="name"/>
+              <group string="Group By">
+                  <filter name="by_vehicle" string="By area"
+                          context="{'group_by': 'area'}"/>
+              </group>
+          </search>
+      </field>
+    </record>
+
     <menuitem id="service_menu" name="Service People"
         parent="staff_menu"
         action="service_list_action"/>
@@ -348,6 +362,24 @@
             <p class="o_view_nocontent_smiling_face">Insert a new Delivery Person
             </p>
         </field>
+    </record>
+
+    <record model="ir.ui.view" id="delivery_search_view">
+      <field name="name">delivery.search</field>
+      <field name="model">restaurantmng.delivery</field>
+      <field name="arch" type="xml">
+          <search>
+              <field name="name"/>
+              <filter name="own_vehicle" string="Own Vehicle"
+                      domain="[('own_vehicle', '=', 'true')]"/>
+              <filter name="no_vehicle" string="No Vehicle"
+                      domain="[('own_vehicle', '=', 'false')]"/>
+              <group string="Group By">
+                  <filter name="by_vehicle" string="By vehicle"
+                          context="{'group_by': 'vehicle'}"/>
+              </group>
+          </search>
+      </field>
     </record>
 
     <menuitem id="delivery_menu" name="Delivery People"

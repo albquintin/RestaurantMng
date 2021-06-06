@@ -3,6 +3,7 @@ from datetime import date
 
 class Equipment(models.Model):
   _name = 'restaurantmng.equipment'
+  _order = 'price'
 
   name = fields.Char(string="Name", required=True)
   brand = fields.Char(required=True)

@@ -20,6 +20,6 @@ print(delivery_count)
 
 delivery_details = models.execute_kw(db, uid, password,
     'restaurantmng.delivery', 'search_read',
-    [[['non_gluten', '=', True]]],
+    [[['own_vehicle', '=', True]]],
     {'fields': ['name', 'dni', 'mobile_phone'], 'limit': 5})
 print(delivery_details)

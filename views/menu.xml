@@ -8,6 +8,7 @@
                   <group>
                       <field name="name"/>
                       <field name="dish_ids"/>
+                      <field name="drink_id"/>
                   </group>
               </sheet>
           </form>
@@ -21,6 +22,7 @@
           <tree string="Menu Tree">
             <field name="name"/>
             <field name="dish_ids"/>
+            <field name="drink_id"/>
             <field name="price"/>
           </tree>
       </field>

@@ -2,6 +2,7 @@ from odoo import models, fields
 
 class Event(models.Model):
   _name = 'restaurantmng.event'
+  _order = 'num_people'
 
   name = fields.Char(string="Name", required=True)
   event_date = fields.Date(required=True)
