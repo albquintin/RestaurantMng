@@ -13,7 +13,7 @@
     'category': 'Test',
     'version': '0.1',
 
-    'depends': ['base'],
+    'depends': ['base', 'board'],
 
     'data': [
         'security/security.xml',
@@ -31,6 +31,7 @@
         'views/neighborhood.xml',
         'views/order.xml',
         'views/event.xml',
+        'views/dish_board.xml',
         'reports/report_event.xml',
         'reports/report_order.xml',
         'reports/report_food_order.xml',

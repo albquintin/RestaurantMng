@@ -57,9 +57,9 @@
           <search>
               <field name="name"/>
               <filter name="alcoholic_drinks" string="Alcoholic Drinks"
-                      domain="[('is_alcoholic', '=', 'true')]"/>
+                      domain="[('is_alcoholic', '=', True)]"/>
               <filter name="non_alcoholic_drinks" string="Non Alcoholic Drinks"
-                      domain="[('is_alcoholic', '=', 'false')]"/>
+                      domain="[('is_alcoholic', '=', False)]"/>
           </search>
       </field>
   </record>

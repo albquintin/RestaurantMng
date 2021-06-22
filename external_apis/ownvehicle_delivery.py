@@ -7,7 +7,6 @@ import xmlrpc.client
 
 common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(url))
 version = common.version()
-print("details...", version)
 
 uid = common.authenticate(db, username, password, {})
 

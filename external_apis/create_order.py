@@ -13,4 +13,4 @@ models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))
 
 new_order = models.execute_kw(db, uid, password,
     'restaurantmng.order', 'create',
-    [{'order_number': '1234', 'client_id':'1','delivery_id':'1'}])
+    [{'order_number': '1234', 'client_id':'1','menu_ids':[(6, 1, [1])],'delivery_id':'1'}])

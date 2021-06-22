@@ -150,10 +150,21 @@
         </field>
     </record>
 
+    <record model="ir.ui.view" id="chef_pivot_view">
+        <field name="name">chef.pivot</field>
+        <field name="model">restaurantmng.chef</field>
+        <field name="arch" type="xml">
+            <pivot string="Chefs">
+                <field name="specialty" type="row"/>
+                <field name="name"/>
+            </pivot>
+        </field>
+    </record>
+
     <record model="ir.actions.act_window" id="chef_list_action">
         <field name="name">Chef</field>
         <field name="res_model">restaurantmng.chef</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,pivot</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">Insert a new Chef
             </p>
